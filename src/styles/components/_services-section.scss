@@ -1,0 +1,26 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.services-section {
+
+    &__list {
+        gap: $space-s-plus;
+
+        display: grid;
+        grid-template-columns: repeat(5, minmax($service-card-width, auto));
+
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        @include tab {
+            overflow-x: auto;
+            grid-template-columns: repeat(5, minmax(auto, $service-card-width));
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        flex-basis: $service-card-width;
+    }
+
+}
