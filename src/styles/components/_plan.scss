@@ -1,0 +1,93 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.plan {
+    padding: $space-l-minus;
+    box-shadow: 0px 4px 40px 0px #1D395F14;
+    border-radius: $border-radius-xxxxl;
+    display: flex;
+    flex-direction: column;
+    gap: $space-l-minus;
+
+    color: $color-text-icon-primary;
+    position: relative;
+    overflow: hidden;
+
+    &__label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-transform: uppercase;
+        color: $color-bg-base;
+        font-size: $fs-title-xs;
+        line-height: $lh-title-xs;
+        font-family: $ff-secondary;
+        font-weight: $fw-l;
+        background-color: $color-accent;
+        padding-block: $space-xxs-plus;
+        padding-inline: $space-m;
+        border-radius: 0 0 0 $border-radius-xxxxl;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: $space-s-plus;
+    }
+
+    &__price-cost {
+        font-size: $fs-title-l;
+        line-height: $lh-title-l;
+        letter-spacing: $lts-s;
+        font-family: $ff-secondary;
+        font-weight: $fw-l;
+    }
+
+    &__price-period {
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: $space-l-plus;
+        height: 100%;
+    }
+
+    &__body::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: $border-width-xs;
+        background-color: $color-line;
+    }
+
+    &__benefits {
+        display: flex;
+        flex-direction: column;
+        gap: $space-s;
+        flex-grow: 1;
+    }
+
+    &__benefits-item {
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+        display: flex;
+        align-items: center;
+        gap: $space-s;
+    }
+
+    &__benefits-icon {
+        fill: $color-accent;
+    }
+}
+
+.plan--bestseller {
+    border: $border-width-s solid $color-accent;
+
+    @include tab {
+        transform: translateY(-32px);
+    }
+
+}
