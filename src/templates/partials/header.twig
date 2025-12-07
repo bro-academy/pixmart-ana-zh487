@@ -1,0 +1,42 @@
+{% from 'ui/icon.twig' import icon %}
+
+<header class="header">
+
+	<div class="content-wrapper">
+
+		<div class="header__unit-left">
+
+			<button type="button" class="header__burger button button--accent button--icon mob-vis tab-hid js-burger-button">
+				<div class="header__burger-bar header__burger-bar-1"></div>
+				<div class="header__burger-bar header__burger-bar-2"></div>
+				<div class="header__burger-bar header__burger-bar-3"></div>
+			</button>
+
+			<a href="/" class="header__logo">
+				<svg class="header__logo-icon" width="108" height="21"><use href="/src/assets/logo/logo.svg"/></svg>
+			</a>
+
+			<div class="header__dropdown mob-hid tab-vis js-burger-dropdown">
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						{% for item in common.header.navigation %}
+							<li class="header__nav-item">
+								<a href="{{ item.link }}" class="header__nav-link link link--accent">{{ item.text }}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+
+		<div class="header__unit-right">
+			<div class="header__search">{% include '/search.twig' with { item:common.header.search } %}</div>
+			<button type="submit" class="header__search-button button button--accent button--icon">
+				{{ icon ("header__search-button-icon button__icon", "shop", 24, 24) }}
+			</button>
+		</div>
+
+	</div>
+
+</header>
