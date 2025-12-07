@@ -9,7 +9,7 @@
         },
         {
           "text": "Products",
-          "link": "/catalog"
+          "link": "/products"
         },
         {
           "text": "Creators",
@@ -67,27 +67,27 @@
           "list": [
             {
               "text": "Website",
-              "link": "/catalog"
+              "link": "/products"
             },
             {
               "text": "Mobile App",
-              "link": "/catalog"
+              "link": "/products"
             },
             {
               "text": "Social Media Feeds",
-              "link": "/catalog"
+              "link": "/products"
             },
             {
               "text": "Presentation",
-              "link": "/catalog"
+              "link": "/products"
             },
             {
               "text": "Product Mockups",
-              "link": "/catalog"
+              "link": "/products"
             },
             {
               "text": "Illustrations",
-              "link": "/catalog"
+              "link": "/products"
             }
           ]
         },
