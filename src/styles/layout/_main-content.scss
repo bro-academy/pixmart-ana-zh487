@@ -1,0 +1,14 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.main-content {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: $section-space-mob;
+
+    @include tab {
+        row-gap: $section-space-tab;
+    }
+}
