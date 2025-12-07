@@ -1,9 +1,19 @@
+{% set siteTitle= index.title %}
+
 {% extends 'src/templates/layouts/base.twig' %}
 
-{% from 'src/templates/partials/ui/icon.twig' import icon %}
-
 {% block content %}
-  <h1>{{ index.title }}</h1>
+  
+  {% include 'src/templates/partials/hero-section.twig' %}
 
-  {% include 'src/templates/partials/welcome-section.twig' %}
+  {% include 'src/templates/partials/services-section.twig' %}
+
+  {% include 'src/templates/partials/categories-section.twig' %}
+
+  {% include 'src/templates/partials/trending-section.twig' %}
+
+  {% include 'src/templates/partials/pricing-section.twig' %}
+
+  {% include 'src/templates/partials/faq-section.twig' %}
+
 {% endblock %}

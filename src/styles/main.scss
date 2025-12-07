@@ -1,58 +1,31 @@
-/* Main styles */
-:root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --text-color: #333333;
-  --background-color: #f8f9fa;
-  --white-color: #ffffff;
-}
+@use '../styles/base/global';
 
-body {
-  font-family: "Arial", sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
+@use '../styles/global/content-wrapper';
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+@use '../styles/components/heading-xl';
+@use '../styles/components/heading-l';
+@use '../styles/components/heading-m';
+@use '../styles/components/heading-s';
+@use '../styles/components/heading-xs';
+@use '../styles/components/subheading';
+@use '../styles/components/link';
+@use '../styles/components/button';
+@use '../styles/components/input-default';
+@use '../styles/components/search';
+@use '../styles/components/hero-section';
+@use '../styles/components/services-section';
+@use '../styles/components/service-card';
+@use '../styles/components/picture-grid';
+@use '../styles/components/categories-section';
+@use '../styles/components/category-card';
+@use '../styles/components/trending-section';
+@use '../styles/components/trending-product';
+@use '../styles/components/pricing-section';
+@use '../styles/components/plan';
+@use '../styles/components/faq-section';
+@use '../styles/components/qa';
 
-header {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  padding: 1rem 0;
-
-  h1 {
-    margin: 0;
-  }
-}
-
-main {
-  padding: 2rem 0;
-}
-
-footer {
-  background-color: #333333;
-  color: var(--white-color);
-  padding: 1rem 0;
-  text-align: center;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-
-  &--secondary {
-    background-color: var(--secondary-color);
-  }
-}
+@use '../styles/layout/body';
+@use '../styles/layout/main-content';
+@use '../styles/layout/header';
+@use '../styles/layout/footer';
