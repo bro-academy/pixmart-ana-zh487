@@ -1,0 +1,137 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.button {
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: $space-xs-minus;
+    flex-wrap: wrap;
+
+    background-color: $color-bg-base;
+
+    border-width: $border-width-xs;
+    border-style: solid;
+    border-color: $color-separator-bold;
+    border-radius: $border-radius-m;
+
+    box-shadow: inset 0 0 0 1px $color-separator-bold;
+
+    outline-width: $outline-width-s;
+    outline-style: solid;
+    outline-color: transparent;
+
+    padding-block: $space-xs-minus;
+    padding-inline: $space-m-minus;
+
+    font-weight: $fw-m;
+    font-size: $fs-text-l;
+    line-height: $lh-text-l;
+    color: $color-text-icon-primary;
+
+    &__icon {
+        fill: currentColor;
+    }
+
+    @include transition((background-color, border-color, box-shadow, outline-color, color));
+
+    @include hover {
+        background-color: $color-separator;
+        border-color: $color-separator;
+        box-shadow: inset 0 0 0 1px $color-separator;
+    }
+
+    &:focus {
+        background-color: $color-separator;
+        border-color: $color-focus;
+        outline-color: $color-focus;
+        box-shadow: inset 0 0 0 1px $color-focus;
+    }
+
+    &:active {
+        background-color: $color-separator;
+        border-color: $color-separator;
+        box-shadow: inset 0 0 0 1px $color-separator;
+    }
+
+    &:disabled {
+        color: $color-text-icon-disabled;
+        background-color: $color-separator-bold;
+        border-color: $color-text-icon-disabled;
+        box-shadow: inset 0 0 0 1px $color-text-icon-disabled;
+    }
+
+}
+
+.button--accent {
+    background-color: $color-accent;
+    border-color: transparent;
+    color: $color-neutral-primary;
+    box-shadow: inset 0 0 0 1px transparent;
+
+    @include hover {
+        background-color: $color-focus;
+        border-color: transparent;
+        box-shadow: inset 0 0 0 1px transparent;
+    }
+
+    &:focus {
+        background-color: $color-accent;
+    }
+
+    &:active {
+        background-color: $color-pressed;
+        border-color: transparent;
+        box-shadow: inset 0 0 0 1px transparent;
+    }
+
+    &:disabled {
+        border-color: transparent;
+        box-shadow: inset 0 0 0 1px transparent;
+    }
+}
+
+.button--alternative {
+
+    border-color: transparent;
+    box-shadow: inset 0 0 0 1px transparent;
+
+    @include hover {
+        border-color: transparent;
+        box-shadow: inset 0 0 0 1px transparent;
+    }
+
+    &:active {
+        border-color: transparent;
+        box-shadow: inset 0 0 0 1px transparent;
+    }
+
+    &:disabled {
+        background-color: $color-bg-base;
+        border-color: transparent;
+        box-shadow: inset 0 0 0 1px transparent;
+    }
+}
+
+.buton--small {
+    font-size: $fs-text-m;
+    line-height: $lh-text-m;
+    padding-block: $space-xxs-plus;
+    padding-inline: $space-xs-plus;
+}
+
+.button--large {
+    font-size: $fs-text-xl;
+    line-height: $lh-text-xl;
+    padding-block: $space-s-plus;
+    padding-inline: $space-l-minus;
+}
+
+.button--icon {
+    padding: $space-xs-minus;
+
+    &.button--large {
+        padding: $space-m-minus;
+    }
+}
