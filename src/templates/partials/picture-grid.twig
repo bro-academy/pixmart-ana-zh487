@@ -1,0 +1,28 @@
+<ul class="picture-grid">
+
+{% for item in picture_grid_list %}
+
+	{% if item.type == "picture" %}
+	<li class="picture-grid__item{% if item.largeVertical == "yes" %} picture-grid__item--large-vertical {% endif %}{% if item.largeHorizontal == "yes" %} picture-grid__item--large-horizontal {% endif %}{% if item.horizontal == "yes" %} picture-grid__item--horizontal {% endif %}">
+		{{ picture(
+			"picture-grid__img",
+			item.srcMob,
+			item.alt,
+			item.width,
+			item.height,
+			"center",
+			"cover",
+			item.srcTab,
+			item.srcDesk
+		) }}
+		</li>
+	{% elseif item.type == "icon" %}
+	<li class="picture-grid__item {% if item.smallTop == "yes" %} picture-grid__item--small-top {% endif %}{% if item.smallBottom == "yes" %} picture-grid__item--small-bottom {% endif %}">
+		<div class="picture-grid__icon-wrapper">
+			<svg class="picture-grid__icon" width="{{ item.width_tab }}" height="{{ item.height_tab }}"><use href="/src/assets/images/{{ item.path }}"/></svg>
+		</div>
+	</li>
+	{% endif %}
+
+{% endfor %}
+</ul>
