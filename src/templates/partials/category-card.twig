@@ -1,0 +1,11 @@
+<article class="category-card">
+	<svg class="category-card__icon" width="{{ item.picture_width }}" height="{{ item.picture_height }}"><use href="/src/assets/images/{{ item.picture_path }}"/></svg>
+	<div class="category-card__info">
+		<h3 class="category-card__heading heading-m">{{ item.heading }}</h3>
+		<ul class="category-card__tags">
+			{% for tag in item.tags %}
+				<li class="category-card__tag">{{ tag.tag }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</article>
