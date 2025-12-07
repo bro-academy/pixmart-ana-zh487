@@ -1,0 +1,37 @@
+{% from 'ui/icon.twig' import icon %}
+{% from 'ui/picture.twig' import picture %}
+
+<article class="trending-product">
+	<div class="trending-product__illustration">
+		{{ picture(
+			"trending-product__img",
+			item.srcMob,
+			item.alt,
+			item.width,
+			item.height,
+			"center",
+			"cover",
+			item.srcTab,
+			item.srcDesk
+		) }}
+		{% if item.label_icon %}
+			<span class="trending-product__label">
+				{{ icon ("trending-product__label-icon", item.label_icon, 24, 24) }}
+			</span>
+		{% endif %}
+		<div class="trending-product__overlay">
+            <button type="button" class="trending-product__overlay-button button button--accent button--large">{{ item.overlay_button_text }}</button>
+        </div>
+	</div>
+	<div class="trending-product__body">
+		<header class="trending-product__header">
+			<h3 class="trending-product__heading heading-m">{{ item.name }}</h3>
+			<span class="trending-product__price">{{ item.price }}</span>
+		</header>
+		<ul class="trending-product__tags">
+			{% for tag in item.tags %}
+				<li class="trending-product__tag">{{ tag.tag }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</article>
