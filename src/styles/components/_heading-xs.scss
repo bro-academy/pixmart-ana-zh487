@@ -1,0 +1,13 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.heading-xs {
+
+    color: $color-text-icon-primary;
+    font-family: $ff-secondary;
+    font-weight: $fw-l;
+    font-size: $fs-title-xs;
+    line-height: $lh-title-xs;
+    margin: 0;
+
+}

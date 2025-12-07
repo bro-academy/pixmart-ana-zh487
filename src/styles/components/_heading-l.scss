@@ -1,0 +1,14 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.heading-l {
+
+    color: $color-text-icon-primary;
+    font-family: $ff-secondary;
+    font-weight: $fw-l;
+    letter-spacing: $lts-s;
+    font-size: $fs-title-l;
+    line-height: $lh-title-l;
+    margin: 0;
+
+}
