@@ -1,0 +1,179 @@
+/* screen sizes */
+$mob-w: 440px;
+$tab-w: 1024px;
+$desk-w: 1440px;
+
+
+/* breakpoints */
+$breakpoints: (
+    mob: 440px,
+    tab: 1024px,
+    desk: 1440px
+);
+
+
+/* content sizes */
+$content-width-max: 1280px;
+$search-input-width: 240px;
+$burger-bar-width: 18px;
+$burger-bar-height: 2px;
+$footer-brand-info-width: 320px;
+$subscribe-input-width: 240px;
+$hero-body-max-width: 520px;
+$hero-illustration-max-height: 545px;
+$faq-list-width-desk: 620px;
+$faq-list-width-tab: 412px;
+$faq-gradient-width: 400px;
+$faq-gradient-height: 250px;
+$service-card-width: 224px;
+
+/* fonts */
+$ff-primary: 'Libre Franklin', 'Arial', sans-serif;
+$ff-secondary: 'Plus Jakarta Sans', 'Verdana', sans-serif;
+
+
+/* letter spacing */
+$lts-s: -0.5px;
+
+
+/* colors */
+$color-text-icon-primary: #0D0D15;
+$color-text-icon-secondary: #2A3541D9;
+$color-text-icon-tertiary: #2A3541B2;
+$color-text-icon-baseicon: #2735448C;
+$color-text-icon-disabled: #22344966;
+$color-text-icon-primary-invert: #F8F7FF;
+$color-text-icon-secondary-invert: #EFF5FAD1;
+$color-text-icon-tertiary-invert: #E7EEF7A8;
+$color-text-icon-baseicon-invert: #E7F1FD7D;
+$color-text-icon-disabled-invert: #E5ECFB5C;
+$color-text-icon-alternative: #1A1925;
+$color-text-icon-alternative-secondary: #1D1C28;
+
+$color-bg-base: #FFFFFF;
+$color-bg-alternative: #F8FAFC;
+$color-bg-alternative-secondary: #F4F7FA;
+$color-bg-base-invert: #0D0D15;
+$color-bg-alternative-invert: #1A1925;
+$color-bg-alternative-secondary-invert: #1D1C28;
+
+$color-accent: #0265DC;
+$color-line: #1F324745;
+$color-separator: #294D7517;
+$color-separator-bold: #1D36532B;
+$color-focus: #3892F3;
+$color-pressed: #0054B6;
+$color-accent-invert: #78BBFA;
+$color-line-invert: #D4D9F242;
+$color-separator-invert: #BFC5EE1F;
+$color-separator-bold-invert: #D0D7FB2B;
+$color-focus-invert: #96CEFD;
+
+$color-status-neutral: #899099;
+$color-status-negative: #EA3829;
+$color-status-high: #CB5D00;
+$color-status-medium: #F8D904;
+$color-status-info: #9D57F4;
+$color-status-positive: #008F5D;
+
+$color-neutral-primary: #F5F8FB;
+$color-neutral-secondary: #EFF5FAD1;
+$color-neutral-tertiary: #E7EEF7A8;
+$color-neutral-base-icon: #2735448C;
+$color-neutral-disabled: #22344966;
+$color-neutral-line: #D4D9F242;
+$color-neutral-base-icon: #E7F1FD7D;
+$color-neutral-separator: #BFC5EE1F;
+$color-neutral-separator-bold: #D0D7FB2B;
+$color-neutral-alternative: #D0D7FB2B;
+$color-neutral-alternative-secondary: #F4F7FA;
+
+
+/* spacing */
+$space-xxs-minus: 2px;
+$space-xxs: 4px;
+$space-xxs-plus: 6px;
+$space-xs-minus: 8px;
+$space-xs: 10px;
+$space-xs-plus: 12px;
+$space-s-minus: 14px;
+$space-s: 16px;
+$space-s-plus: 18px;
+$space-m-minus: 20px;
+$space-m: 24px;
+$space-m-plus: 28px;
+$space-l-minus: 32px;
+$space-l: 36px;
+$space-l-plus: 40px;
+$space-xl-minus: 44px;
+$space-xl: 48px;
+$space-xl-plus: 52px;
+$space-xxl-minus: 56px;
+$space-xxl: 64px;
+$space-xxl-plus: 72px;
+$space-xxxl: 80px;
+
+$section-space-mob: 64px;
+$section-space-tab: 120px;
+
+
+/* font size */
+$fs-text-xs: 11px;
+$fs-text-s: 12px;
+$fs-text-m: 14px;
+$fs-text-l: 16px;
+$fs-text-xl: 18px;
+
+$fs-title-xs: 20px;
+$fs-title-s: 24px;
+$fs-title-m: 28px;
+$fs-title-l: 36px;
+$fs-title-xl: 52px;
+
+
+/* line height */
+$lh-text-xs: 16px;
+$lh-text-s: 18px;
+$lh-text-m: 20px;
+$lh-text-l: 24px;
+$lh-text-xl: 28px;
+
+$lh-title-xs: 26px;
+$lh-title-xs-large: 28px;
+$lh-title-s: 32px;
+$lh-title-m: 36px;
+$lh-title-l: 48px;
+$lh-title-xl: 62px;
+
+
+/* font weight */
+$fw-xs: 400;
+$fw-s: 500;
+$fw-m: 600;
+$fw-l: 700;
+
+
+/* border width */
+$border-width-xs: 1px;
+$border-width-s: 2px;
+$border-width-m: 4px;
+
+
+/* outline width */
+$outline-width-xs: 1px;
+$outline-width-s: 2px;
+$outline-width-m: 4px;
+
+
+/* border radius */
+$border-radius-xxxs: 1px;
+$border-radius-xxs: 2px;
+$border-radius-xxs: 3px;
+$border-radius-xs: 4px;
+$border-radius-s: 5px;
+$border-radius-m: 8px;
+$border-radius-m-large: 10px;
+$border-radius-l: 12px;
+$border-radius-xl: 14px;
+$border-radius-xxl: 16px;
+$border-radius-xxxxl: 20px;
