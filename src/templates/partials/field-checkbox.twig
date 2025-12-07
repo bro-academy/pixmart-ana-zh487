@@ -1,0 +1,19 @@
+<div class="field-checkbox {% if field.toggle == "yes" %}field-toggle{% endif %}">
+	<input 
+        type="checkbox" 
+        id="{{ field.id }}" 
+        name="{{ field.name }}" 
+        value="{{ field.value }}" 
+        class="field-checkbox__input" 
+        {% if field.required == "yes" %} required {% endif %}
+        {% if field.checked == "yes" %} checked {% endif %}
+    />
+    {% if field.label %}
+	<label 
+        for="{{ field.id }}" 
+        class="label-default label-checkbox"
+    >
+		{{ field.label }}
+	</label>
+    {% endif %}
+</div>

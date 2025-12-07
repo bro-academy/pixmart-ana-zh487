@@ -1,0 +1,22 @@
+<div class="field-date">
+{% if field.label %}
+	<label 
+        for="{{ field.id }}" 
+        class="label-default"
+    >
+		{{ field.label }}
+	</label>
+	<br/>
+{% endif %}
+	<input 
+        type="date" 
+        id="{{ field.id }}" 
+        name="{{ field.name }}" 
+        placeholder="{{ field.placeholder }}" 
+        class="field-date__input input-default {% if field.large == "yes" %} input-default--large {% endif %}" 
+        {% if field.min %} min="{{ field.min }}" {% endif %} 
+        {% if field.max %} max="{{ field.max }}" {% endif %} 
+        {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %} 
+        {% if field.required == "yes" %} required {% endif %}
+    />
+</div>

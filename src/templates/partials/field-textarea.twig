@@ -1,0 +1,20 @@
+<div class="field-textarea">
+        {% if field.label %}
+	<label 
+        for="{{ field.id }}" 
+        class="label-default"
+        >
+		{{ field.label }}
+	</label>
+	<br/>
+        {% endif %}
+	<textarea 
+        id="{{ field.id }}" 
+        name="{{ field.name }}" 
+        placeholder="{{ field.placeholder }}" 
+        class="input-default field-textarea__input" 
+        {% if field.minlength %} minlength="{{ field.minlength }}" {% endif %} 
+        {% if field.maxlength %} maxlength="{{ field.maxlength }}" {% endif %} 
+        {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %} 
+        {% if field.required == "yes" %} required {% endif %}></textarea>
+</div>
