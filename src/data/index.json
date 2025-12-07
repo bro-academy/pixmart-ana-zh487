@@ -1,5 +1,360 @@
 {
   "index": {
-    "title": "Hello World!"
+    "title": "Homepage | Pixmart",
+    "hero_section": {
+      "heading": [
+        {
+          "text": "Craft Your <br />Success with <br />Our "
+        },
+        {
+          "text": "Digital",
+          "is_highlighted": "yes"
+        },
+        {
+          "text": "Assets"
+        }
+      ],
+      "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
+      "buttons": [
+        {
+          "text": "Shop Now",
+          "is_accent": "yes"
+        },
+        {
+          "text": "Watch About Us",
+          "icon": "play_fill"
+        }
+      ],
+      "illustrations": [
+        {
+          "type": "picture",
+          "srcMob": "/hero/pictures/pic_3_mob.png",
+          "alt": "Website example",
+          "width": "242",
+          "height": "140",
+          "srcTab": "/hero/pictures/pic_3_tab.png",
+          "srcDesk": "/hero/pictures/pic_3_desk.png",
+          "largeVertical": "no",
+          "largeHorizontal": "yes",
+          "horizontal": "no"
+        },
+        {
+          "type": "picture",
+          "srcMob": "/hero/pictures/pic_1_mob.png",
+          "alt": "Website example",
+          "width": "131",
+          "height": "197",
+          "srcTab": "/hero/pictures/pic_1_tab.png",
+          "srcDesk": "/hero/pictures/pic_1_desk.png",
+          "largeVertical": "yes",
+          "largeHorizontal": "no",
+          "horizontal": "no"
+        },
+        {
+          "type": "picture",
+          "srcMob": "/hero/pictures/pic_2_mob.png",
+          "alt": "Website example",
+          "width": "171",
+          "height": "96",
+          "srcTab": "/hero/pictures/pic_2_tab.png",
+          "srcDesk": "/hero/pictures/pic_2_desk.png",
+          "largeVertical": "no",
+          "largeHorizontal": "no",
+          "horizontal": "yes"
+        },
+        {
+          "type": "icon",
+          "path": "/hero/icons/icon_1.svg",
+          "width_mob": "20",
+          "height_mob": "20",
+          "width_tab": "32",
+          "height_tab": "32",
+          "width_desk": "32",
+          "height_desk": "32",
+          "smallTop": "yes",
+          "smallBottom": "no"
+        },
+        {
+          "type": "icon",
+          "path": "/hero/icons/icon_2.svg",
+          "width_mob": "20",
+          "height_mob": "20",
+          "width_tab": "32",
+          "height_tab": "32",
+          "width_desk": "32",
+          "height_desk": "32",
+          "smallTop": "no",
+          "smallBottom": "yes"
+        }
+      ]
+    },
+    "services_section": [
+      {
+        "picture_path": "/categories/ui-kits.svg",
+        "picture_width": "150",
+        "picture_height": "150",
+        "name": "UI Kits"
+      },
+      {
+        "picture_path": "/categories/social-media.svg",
+        "picture_width": "150",
+        "picture_height": "150",
+        "name": "Social Media"
+      },
+      {
+        "picture_path": "/categories/presentations.svg",
+        "picture_width": "150",
+        "picture_height": "150",
+        "name": "Presentations"
+      },
+      {
+        "picture_path": "/categories/fonts.svg",
+        "picture_width": "150",
+        "picture_height": "150",
+        "name": "Fonts"
+      },
+      {
+        "picture_path": "/categories/illustrations.svg",
+        "picture_width": "150",
+        "picture_height": "150",
+        "name": "Illustrations"
+      }
+    ],
+    "categories_section": {
+      "list": [
+        {
+          "picture_path": "/categories/ui-kits.svg",
+          "picture_width": "48",
+          "picture_height": "48",
+          "heading": "Templates",
+          "tags": [
+            {
+              "tag": "For all needs"
+            },
+            {
+              "tag": "Modern"
+            }
+          ]
+        },
+        {
+          "picture_path": "/categories/social-media.svg",
+          "picture_width": "48",
+          "picture_height": "48",
+          "heading": "App Icons",
+          "tags": [
+            {
+              "tag": "High-quality"
+            },
+            {
+              "tag": "Elegant"
+            }
+          ]
+        },
+        {
+          "picture_path": "/categories/presentations.svg",
+          "picture_width": "48",
+          "picture_height": "48",
+          "heading": "Slides",
+          "tags": [
+            {
+              "tag": "Pitch-ready"
+            },
+            {
+              "tag": "Creative"
+            }
+          ]
+        },
+        {
+          "picture_path": "/categories/illustrations.svg",
+          "picture_width": "48",
+          "picture_height": "48",
+          "heading": "Design Tools",
+          "tags": [
+            {
+              "tag": "Easy to use"
+            },
+            {
+              "tag": "Unique"
+            }
+          ]
+        }
+      ],
+      "subheading": "Categories",
+      "heading": "Discover Assets for <br />Every Projects",
+      "description": "From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.",
+      "button_text": "Shop Now"
+    },
+    "trending": {
+      "subheading": "Trending",
+      "heading": "Popular Products",
+      "list": [
+        {
+          "label_icon": "trophy",
+          "srcMob": "/trending/travel_hero.png",
+          "width": "305",
+          "height": "272",
+          "alt": "Travel Hero",
+          "name": "Travel Hero",
+          "price": "€29.99",
+          "overlay_button_text": "Go to product",
+          "tags": [
+            {
+              "tag": "Adventure"
+            },
+            {
+              "tag": "Journey"
+            }
+          ]
+        },
+        {
+          "label_icon": "trophy",
+          "srcMob": "/trending/healthcare_pro.png",
+          "width": "305",
+          "height": "272",
+          "alt": "Healthcare Pro",
+          "name": "Healthcare Pro",
+          "price": "€15.99",
+          "overlay_button_text": "Go to product",
+          "tags": [
+            {
+              "tag": "Medical"
+            },
+            {
+              "tag": "Wellness"
+            }
+          ]
+        },
+        {
+          "srcMob": "/trending/foodish_delight.png",
+          "width": "305",
+          "height": "272",
+          "alt": "Foodish Delight",
+          "name": "Foodish Delight",
+          "price": "€31.99",
+          "overlay_button_text": "Go to product",
+          "tags": [
+            {
+              "tag": "Catering"
+            },
+            {
+              "tag": "Food"
+            }
+          ]
+        },
+        {
+          "srcMob": "/trending/real_estate.png",
+          "width": "305",
+          "height": "272",
+          "alt": "Real Estate",
+          "name": "Real Estate",
+          "price": "€40.99",
+          "overlay_button_text": "Go to product",
+          "tags": [
+            {
+              "tag": "Modern"
+            },
+            {
+              "tag": "Homes"
+            }
+          ]
+        }
+      ]
+    },
+    "pricing": {
+      "subheading": "Pricing plan",
+      "heading": "Choose The Perfect Plan for Creative Potential",
+      "list": [
+        {
+          "bestseller": "no",
+          "name": "Standard Membership",
+          "cost": "€14.99",
+          "period": "Month",
+          "benefits": [
+            {
+              "benefit": "Enhanced Resource Access"
+            },
+            {
+              "benefit": "Monthly Credits"
+            },
+            {
+              "benefit": "Priority Customer Support"
+            },
+            {
+              "benefit": "Community Features Access"
+            }
+          ],
+          "button_text": "Subscribe"
+        },
+        {
+          "bestseller": "yes",
+          "name": "Plus Membership",
+          "cost": "€29.99",
+          "period": "Month",
+          "benefits": [
+            {
+              "benefit": "All Standard Benefits"
+            },
+            {
+              "benefit": "Increased Monthly Credits"
+            },
+            {
+              "benefit": "Early Access to New Releases"
+            },
+            {
+              "benefit": "Member-Only Offers"
+            }
+          ],
+          "button_text": "Subscribe"
+        },
+        {
+          "bestseller": "no",
+          "name": "Pro Membership",
+          "cost": "€49.99",
+          "period": "Month",
+          "benefits": [
+            {
+              "benefit": "All Plus Benefits"
+            },
+            {
+              "benefit": "Unlimited Downloads"
+            },
+            {
+              "benefit": "Custom Licensing"
+            },
+            {
+              "benefit": "Direct Creator Collaboration"
+            }
+          ],
+          "button_text": "Subscribe"
+        }
+      ]
+    },
+    "faq": {
+      "subheading": "F.A.Q.",
+      "heading": "Answers to Your Questions",
+      "button_text": "Ask Us A Question",
+      "list": [
+        {
+          "question": "Can I request a refund?",
+          "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+        },
+        {
+          "question": "How do I access my purchased products?",
+          "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+        },
+        {
+          "question": "Are there any discounts for bulk purchases?",
+          "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+        },
+        {
+          "question": "What payment methods do you accept here?",
+          "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+        },
+        {
+          "question": "Can I sell my digital products on this marketplace?",
+          "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+        }
+      ]
+    }
   }
 }
