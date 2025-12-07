@@ -21,7 +21,7 @@
     font-size: $fs-title-l;
     line-height: $lh-title-l;
 
-    @include desk {
+    @include tab {
         font-size: $fs-title-xl;
         line-height: $lh-title-xl;
     }
