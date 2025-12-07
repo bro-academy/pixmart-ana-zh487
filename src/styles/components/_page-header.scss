@@ -1,0 +1,11 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.page-header {
+    
+    padding-block: $space-xxl $space-xxxxl;
+    background: url(/src/assets/images/page-header/bg_wave.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}

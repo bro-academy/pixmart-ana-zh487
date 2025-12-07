@@ -1,5 +1,19 @@
 {
   "products": {
-    "title": "Products | Pixmart"
+    "title": "Products | Pixmart",
+    "page_header": {
+      "heading": [
+        {
+          "text": "Explore Top <br />"
+        },
+        {
+          "text": "UI Kits",
+          "is_highlighted": "yes"
+        },
+        {
+          "text": "Design Assets"
+        }
+      ]
+    }
   }
 }

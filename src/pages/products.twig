@@ -3,5 +3,7 @@
 {% extends 'src/templates/layouts/base.twig' %}
 
 {% block content %}
+
+{% include 'src/templates/partials/page-header-section.twig' with {item:products.page_header} %}
   
 {% endblock %}
