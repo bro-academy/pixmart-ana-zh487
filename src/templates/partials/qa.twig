@@ -1,0 +1,9 @@
+{% from 'ui/icon.twig' import icon %}
+
+<details class="qa">
+	<summary class="qa__question heading-xs">
+        {{ item.question }}
+		<button type="button" class="qa__question-button button button--small button--icon">{{ icon ("qa__question-icon button__icon", "down", 24, 24) }}</button>
+	</summary>
+	<p class="qa__answer">{{ item.answer }}</p>
+</details>

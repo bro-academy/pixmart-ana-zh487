@@ -1,0 +1,18 @@
+<section class="faq-section">
+	<div class="content-wrapper">
+		<header class="faq-section__header">
+			<div class="faq-section__titles">
+				<span class="faq-section__subheading subheading">{{ index.faq.subheading }}</span>
+				<h2 class="faq-section__heading heading-l">{{ index.faq.heading }}</h2>
+			</div>
+			<button type="button" class="button button--large">{{ index.faq.button_text }}</button>
+		</header>
+		<ul class="faq-section__list">
+			{% for item in index.faq.list %}
+				<li class="faq-section__item">
+					{% include '/qa.twig' %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
