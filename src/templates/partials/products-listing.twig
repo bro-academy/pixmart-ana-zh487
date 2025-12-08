@@ -1,0 +1,41 @@
+{% from 'ui/icon.twig' import icon %}
+
+<section class="products-listing">
+	<header class="products-listing__header">
+		<div class="products-listing__controls">
+			<div class="products-listing__controls-block">
+				<div class="products-listing__select">
+					{% include '/select.twig' with { options_array:products.list_header.select } %}
+				</div>
+				<label for="products-filter-toggler" class="products-listing__toggler desk-hid button button--accent button--icon">{{ icon ("product-card__button-icon button__icon", "filter", 24, 24) }}</label>
+			</div>
+			<div class="products-listing__controls-block">
+				<p class="products-listing__results-counter">
+					{{ products.list_header.results_counter.text_1 }}
+					{{ products.list_header.results_counter.showing_amount }}
+					{{ products.list_header.results_counter.text_2 }}
+					{{ products.list_header.results_counter.all_amount }}
+					{{ products.list_header.results_counter.text_3 }}
+				</p>
+				<div class="products-listing__viewmode">
+					<button type="button" class="products-listing__viewmode-button button button--icon button--accent">{{ icon ("product-card__button-icon button__icon", "grid", 24, 24) }}</button>
+					<button type="button" class="products-listing__viewmode-button button button--icon">{{ icon ("product-card__button-icon button__icon", "list", 24, 24) }}</button>
+				</div>
+			</div>
+		</div>
+		<div class="products-listing__tags">
+			{% for item in products.list_header.tags %}
+				<button type="button" class="products-listing__tags-button button button--small">{{ item.text }}
+					{{ icon ("product-card__button-icon button__icon", "close", 24, 24) }}</button>
+			{% endfor %}
+		</div>
+	</header>
+	<ul class="products-listing__list">
+		{% for item in products.list %}
+			<li class="products-listing__item">
+				{% include '/product-card.twig' %}
+			</li>
+		{% endfor %}
+	</ul>
+	<button type="button" class="products-listing__button button button--large">{{ products.button_text }}</button>
+</section>

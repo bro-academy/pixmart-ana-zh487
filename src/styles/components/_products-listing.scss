@@ -1,0 +1,94 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.products-listing {
+
+    display: flex;
+    flex-direction: column;
+    gap: $space-xl;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: $space-m;
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $space-m;
+        flex-wrap: wrap;
+    }
+
+    &__controls-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $space-xs-minus;
+        flex-grow: 1;
+        width: 100%;
+
+        @include tab {
+            width: auto;
+            justify-content: flex-start;
+        }
+    }
+
+    &__select {
+        width: 100%;
+
+        & .select {
+            width: 100%;
+        }
+
+        @include tab {
+            width: auto;
+        }
+    }
+
+    &__results-counter {
+        flex-grow: 1;
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+        color: $color-text-icon-primary;
+
+        @include tab {
+            text-align: right;
+        }
+    }
+
+    &__tags {
+        display: flex;
+        align-items: center;
+        gap: $space-xs-minus;
+        flex-wrap: wrap;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: $space-l-minus;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            background: linear-gradient(to top, rgb(255 255 255), rgb(255 255 255 / .5));
+            bottom: 0;
+        }
+    }
+
+    & .product-card {
+        height: 100%;
+    }
+
+    &__button {
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+}
