@@ -1,0 +1,12 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.label-default {
+
+    font-size: $fs-text-m;
+    line-height: $lh-text-m;
+    color: $color-text-icon-primary;
+
+    @include transition((color));
+
+}
