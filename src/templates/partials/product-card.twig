@@ -1,0 +1,42 @@
+{% from 'ui/icon.twig' import icon %}
+{% from 'ui/picture.twig' import picture %}
+
+<article class="product-card product-card--{% if item.label == 'Sold out' %}soldout{% elseif item.label == 'New' %}new{% elseif item.label == 'Popular' %}popular{% endif %}">
+
+	{{ picture(
+	"product-card__img",
+	item.picture.srcMob,
+	item.picture.alt,
+	item.picture.width,
+	item.picture.height,
+	"center",
+	"cover",
+	item.picture.srcTab,
+	item.picture.srcDesk
+    ) }}
+
+	<span class="product-card__label">{{ item.label }}</span>
+
+	<div class="product-card__body">
+		<header class="product-card__header">
+			<h3 class="product-card__heading heading-xs">{{ item.name }}</h3>
+            <ul class="product-card__tags">
+                {% for tag in item.tags %}
+                    <li class="product-card__tag">{{ tag.tag }}</li>
+                {% endfor %}
+            </ul>
+		</header>
+        <div class="product-card__purchase">
+            <span class="product-card__price heading-xs">
+            {% if item.label == 'Sold out' %}€00.00
+            {% else %}{{ item.price }}
+            {% endif %}
+            </span>
+            <div class="product-card__actions">
+                <button type="button" class="product-card__button button button--icon">{{ icon ("product-card__button-icon button__icon", "heart", 24, 24) }}</button>
+                <button type="button" class="product-card__button button button--icon button--accent">{{ icon ("product-card__button-icon button__icon", "shop", 24, 24) }}</button>
+            </div>
+        </div>
+	</div>
+
+</article>

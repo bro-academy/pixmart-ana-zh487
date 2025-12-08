@@ -1,0 +1,114 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.product-card {
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: $space-m-minus;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        gap: $space-xs-plus;
+    }
+
+    &__img {
+        display: block;
+        border-radius: $border-radius-xxxxl;
+    }
+
+    &__label {
+        color: $color-neutral-primary;
+        text-transform: uppercase;
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+        font-weight: $fw-s;
+        padding-block: $space-xs-minus;
+        padding-inline: $space-s;
+        position: absolute;
+        left: $space-s;
+        top: $space-s;
+        border-radius: $border-radius-xxxxl;
+    }
+
+    &__tags {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $space-xxs;
+    }
+
+    &__tag {
+        color: $color-text-icon-tertiary;
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+
+        @include transition((color));
+
+        &:not(:last-child)::after {
+            content: '\2022';
+            margin-inline-start: $space-xxs;
+        }
+    }
+
+    &__purchase {
+        display: flex;
+        justify-content: space-between;
+        gap: $space-xs-plus;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    &__price {
+        @include transition((color), .2s);
+    }
+
+    @include hover {
+        .product-card__price {
+            color: $color-accent;
+        }
+    }
+
+}
+
+.product-card--new {
+    .product-card__label {
+        background-color: $color-status-new;
+    }
+}
+
+.product-card--popular {
+    .product-card__label {
+        background-color: $color-accent;
+    }
+}
+
+.product-card--soldout {
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: $color-bg-base;
+        opacity: .5;
+    }
+
+    .product-card__actions {
+        opacity: 0;
+        position: absolute;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .product-card__label {
+        background-color: $color-bg-base;
+        color: $color-text-icon-tertiary;
+    }
+}
