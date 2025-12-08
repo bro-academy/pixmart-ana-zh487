@@ -6,4 +6,12 @@
 
 	{% include 'src/templates/partials/page-header.twig' with {item:products.page_header} %}
 
+	<div class="content-wrapper content-wrapper--products">
+
+		{% include 'src/templates/partials/products-filter.twig' %}
+
+		{% include 'src/templates/partials/products-listing.twig' %}
+
+	</div>
+
 {% endblock %}

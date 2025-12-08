@@ -26,6 +26,12 @@ $faq-list-width-tab: 412px;
 $faq-gradient-width: 400px;
 $faq-gradient-height: 250px;
 $service-card-width: 224px;
+$products-filter-width: 217px;
+$checkbox-size: 14px;
+$radio-size: 14px;
+$switcher-width: 40px;
+$switcher-height: 20px;
+$switcher-circle-size: 16px;
 
 /* fonts */
 $ff-primary: 'Libre Franklin', 'Arial', sans-serif;
@@ -68,6 +74,7 @@ $color-line-invert: #D4D9F242;
 $color-separator-invert: #BFC5EE1F;
 $color-separator-bold-invert: #D0D7FB2B;
 $color-focus-invert: #96CEFD;
+$color-active: #B5DEFF;
 
 $color-status-neutral: #899099;
 $color-status-negative: #EA3829;
@@ -75,6 +82,7 @@ $color-status-high: #CB5D00;
 $color-status-medium: #F8D904;
 $color-status-info: #9D57F4;
 $color-status-positive: #008F5D;
+$color-status-new: #007772;
 
 $color-neutral-primary: #F5F8FB;
 $color-neutral-secondary: #EFF5FAD1;
@@ -92,6 +100,7 @@ $color-neutral-alternative-secondary: #F4F7FA;
 /* spacing */
 $space-xxs-minus: 2px;
 $space-xxs: 4px;
+$space-xxs-large: 5px;
 $space-xxs-plus: 6px;
 $space-xs-minus: 8px;
 $space-xs: 10px;
@@ -158,6 +167,7 @@ $fw-l: 700;
 $border-width-xs: 1px;
 $border-width-s: 2px;
 $border-width-m: 4px;
+$border-width-l: 5px;
 
 
 /* outline width */

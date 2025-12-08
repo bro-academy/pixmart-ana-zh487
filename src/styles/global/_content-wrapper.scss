@@ -15,3 +15,9 @@
         padding-inline: 0;
     }
 }
+
+.content-wrapper--products {
+    display: flex;
+    justify-content: space-between;
+    gap: $space-m;
+}

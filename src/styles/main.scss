@@ -11,6 +11,11 @@
 @use '../styles/components/link';
 @use '../styles/components/button';
 @use '../styles/components/input-default';
+@use '../styles/components/label-default';
+@use '../styles/components/field-checkbox';
+@use '../styles/components/field-radio';
+@use '../styles/components/field-switcher';
+@use '../styles/components/select';
 @use '../styles/components/search';
 @use '../styles/components/hero-section';
 @use '../styles/components/services-section';
@@ -25,8 +30,10 @@
 @use '../styles/components/faq-section';
 @use '../styles/components/qa';
 @use '../styles/components/page-header';
+@use '../styles/components/products-listing';
+@use '../styles/components/products-filter';
+@use '../styles/components/product-card';
 
-@use '../styles/layout/body';
 @use '../styles/layout/main-content';
 @use '../styles/layout/header';
 @use '../styles/layout/footer';
