@@ -1,5 +1,18 @@
 {
   "contacts": {
-    "title": "Contacts | Pixmart"
+    "title": "Contacts | Pixmart",
+    "page_header": {
+      "has_background": "no",
+      "two_column": "yes",
+      "subheading": {
+        "text": "Contact",
+        "is__accent": "no"
+      },
+      "heading": [
+        {
+          "text": "Get in Touch <br />with Us"
+        }
+      ]
+    }
   }
 }

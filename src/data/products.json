@@ -2,6 +2,8 @@
   "products": {
     "title": "Products | Pixmart",
     "page_header": {
+      "has_background": "yes",
+      "two_column": "no",
       "heading": [
         {
           "text": "Explore Top <br />"

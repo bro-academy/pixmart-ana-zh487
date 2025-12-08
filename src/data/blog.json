@@ -1,5 +1,21 @@
 {
   "blog": {
-    "title": "Blog | Pixmart"
+    "title": "Blog | Pixmart",
+    "page_header": {
+      "has_background": "no",
+      "two_column": "no",
+      "subheading": {
+        "text": "Typography",
+        "is__accent": "yes"
+      },
+      "heading": [
+        {
+          "text": "Mastering the Art of Typography: <br />"
+        },
+        {
+          "text": "Tips for Eye-Catching Designs for 2024"
+        }
+      ]
+    }
   }
 }
