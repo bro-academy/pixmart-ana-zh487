@@ -1,0 +1,44 @@
+{% from 'ui/icon.twig' import icon %}
+{% from 'ui/picture.twig' import picture %}
+
+<article class="blogpage-article">
+
+	{% for module in item %}
+
+		{% if module.type == "paragraph" %}
+			<p class="blogpage-article__paragraph">{{ module.content }}</p>
+		{% endif %}
+
+		{% if module.type == "subheading" %}
+			<h2 class="blogpage-article__subheading heading-xs blogpage-subheading">{{ module.content }}</h2>
+		{% endif %}
+
+		{% if module.type == "quote" %}
+			<blockquote class="blogpage-article__quote">
+				<p class="blogpage-article__quote-text">{{ module.content }}</p>
+			</blockquote>
+		{% endif %}
+
+		{% if module.type == "figure" %}
+			<figure class="blogpage-article__figure">
+				{{ picture(
+	            "blogpage-article__figure-img",
+	            module.srcMob,
+	            module.alt,
+	            module.width,
+	            module.height,
+	            "center",
+	            "cover",
+                module.srcTab,
+                module.srcDesk
+                 ) }}
+				<figcaption class="blogpage-article__figure-caption">
+					<span class="blogpage-article__figure-text">{{ module.caption_text }}</span>
+					<a href={{ module.caption_link }} class="blogpage-article__figure-link link">{{ module.caption_link_text }}</a>
+				</figcaption>
+			</figure>
+		{% endif %}
+
+	{% endfor %}
+
+</article>
