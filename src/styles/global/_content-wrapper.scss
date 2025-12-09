@@ -3,6 +3,7 @@
 
 .content-wrapper {
 
+    width: 100%;
     max-width: $content-width-max;
     margin-inline: auto;
     padding-inline: $space-s;
@@ -20,4 +21,10 @@
     display: flex;
     justify-content: space-between;
     gap: $space-m;
+}
+
+.content-wrapper--blogpage {
+    display: flex;
+    flex-direction: column;
+    gap: $space-xl;
 }

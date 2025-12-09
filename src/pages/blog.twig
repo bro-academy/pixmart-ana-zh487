@@ -4,6 +4,14 @@
 
 {% block content %}
 
-{% include 'src/templates/partials/page-header.twig' with {item:blog.page_header} %}
-  
+	{% include 'src/templates/partials/page-header.twig' with {item:blog.page_header} %}
+
+	<div class="content-wrapper content-wrapper--blogpage">
+
+		{% include 'src/templates/partials/featured-picture.twig' with {item:blog.featured_picture} %}
+
+		{% include 'src/templates/partials/blogpage-content.twig' %}
+
+	</div>
+
 {% endblock %}
