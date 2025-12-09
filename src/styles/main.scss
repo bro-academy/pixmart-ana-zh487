@@ -39,6 +39,10 @@
 @use '../styles/components/blogpage-article';
 @use '../styles/components/blogpage-subheading';
 
-@use '../styles/layout/main-content';
+@use '../styles/pages/homepage';
+@use '../styles/pages/products';
+@use '../styles/pages/blogpage';
+@use '../styles/pages/contacts';
+
 @use '../styles/layout/header';
 @use '../styles/layout/footer';
