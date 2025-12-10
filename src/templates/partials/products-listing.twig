@@ -5,7 +5,7 @@
 		<div class="products-listing__controls">
 			<div class="products-listing__controls-block">
 				<div class="products-listing__select">
-					{% include '/select.twig' with { options_array:products.list_header.select } %}
+					{% include '/field-select.twig' with { field:products.list_header.select } %}
 				</div>
 				<label for="products-filter-toggler" class="products-listing__toggler desk-hid button button--accent button--icon">{{ icon ("product-card__button-icon button__icon", "filter", 24, 24) }}</label>
 			</div>

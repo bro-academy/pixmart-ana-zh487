@@ -186,24 +186,28 @@
       }
     },
     "list_header": {
-      "select": [
-        {
-          "value": "bestseller",
-          "text": "Best Seller"
-        },
-        {
-          "value": "new",
-          "text": "New"
-        },
-        {
-          "value": "popular",
-          "text": "Popular"
-        },
-        {
-          "value": "soldout",
-          "text": "Sold Out"
-        }
-      ],
+      "select": {
+        "name": "type",
+        "id": "type",
+        "options": [
+          {
+            "value": "bestseller",
+            "text": "Best Seller"
+          },
+          {
+            "value": "new",
+            "text": "New"
+          },
+          {
+            "value": "popular",
+            "text": "Popular"
+          },
+          {
+            "value": "soldout",
+            "text": "Sold Out"
+          }
+        ]
+      },
       "tags": [
         {
           "text": "UI Kit"

@@ -1,0 +1,60 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.field-select {
+
+    &__input {
+        appearance: none;
+
+        background-color: $color-bg-base;
+
+        border-width: $border-width-xs;
+        border-style: solid;
+        border-color: $color-separator-bold;
+        border-radius: $border-radius-m;
+
+        box-shadow: inset 0 0 0 1px $color-separator-bold;
+
+        outline-width: $outline-width-s;
+        outline-style: solid;
+        outline-color: transparent;
+
+        padding-block: $space-xs-minus;
+        padding-inline-start: $space-m-minus;
+        padding-inline-end: $space-xl-plus;
+
+        font-weight: $fw-m;
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+        color: $color-text-icon-primary;
+
+        background-image: url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z' fill='%230D0D15'/></svg>");
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-position: right $space-m-minus center;
+
+        option {
+            font-weight: $fw-m;
+        }
+
+        @include hover {
+            background-color: $color-separator;
+            border-color: $color-separator;
+            box-shadow: inset 0 0 0 $border-width-xs $color-separator;
+        }
+
+        &:focus {
+            background-color: $color-separator;
+            border-color: $color-focus;
+            outline-color: $color-focus;
+            box-shadow: inset 0 0 0 $border-width-xs $color-focus;
+        }
+
+        &:disabled {
+            background-color: $color-separator;
+            border-color: $color-separator;
+            box-shadow: inset 0 0 0 $border-width-xs $color-separator;
+        }
+        
+    }
+}

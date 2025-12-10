@@ -14,4 +14,6 @@
 	{% include '/field-email.twig' %}
 {% elseif field.type == "tel" %}
 	{% include '/field-tel.twig' %}
+{% elseif field.type == "select" %}
+	{% include '/field-select.twig' %}
 {% endif %}
