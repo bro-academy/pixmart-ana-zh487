@@ -1,0 +1,20 @@
+<form action="" method="post" class="contacts-form">
+
+	<div class="contacts-form__fieldset">
+		{% for field in contacts.form.fields %}
+			{% include '/field-list.twig' %}
+		{% endfor %}
+	</div>
+
+	<div class="contacts-form__consents">
+		<ul class="contacts-form__consents-list">
+			{% for item in contacts.form.consents %}
+				<li class="contacts-form__consents-item">
+					{% include '/field-checkbox.twig' with {field:item} %}
+				</li>
+			{% endfor %}
+		</ul>
+		<button type="submit" class="contacts-form__button button button--accent button--large">{{ contacts.form.submit_button_text }}</button>
+	</div>
+
+</form>
