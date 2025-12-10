@@ -12,10 +12,12 @@
 @use '../styles/components/button';
 @use '../styles/components/input-default';
 @use '../styles/components/label-default';
+@use '../styles/components/field-default';
 @use '../styles/components/field-checkbox';
 @use '../styles/components/field-radio';
 @use '../styles/components/field-switcher';
-@use '../styles/components/select';
+@use '../styles/components/field-select';
+@use '../styles/components/field-textarea';
 @use '../styles/components/search';
 @use '../styles/components/hero-section';
 @use '../styles/components/services-section';
@@ -38,11 +40,13 @@
 @use '../styles/components/blogpage-sidebar';
 @use '../styles/components/blogpage-article';
 @use '../styles/components/blogpage-subheading';
+@use '../styles/components/contacts-info';
+@use '../styles/components/contacts-form';
 
 @use '../styles/pages/homepage';
 @use '../styles/pages/products';
 @use '../styles/pages/blogpage';
-@use '../styles/pages/contacts';
+@use '../styles/pages/contactpage';
 
 @use '../styles/layout/header';
 @use '../styles/layout/footer';

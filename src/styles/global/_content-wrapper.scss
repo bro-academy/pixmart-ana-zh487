@@ -28,3 +28,18 @@
     flex-direction: column;
     gap: $space-xl;
 }
+
+.content-wrapper--contactpage {
+    display: flex;
+    flex-direction: column;
+    gap: $space-l-plus;
+
+    @include tab {
+        flex-direction: row;
+        align-items: flex-end;
+
+        & > div {
+            flex: 0 0 calc((100% - $space-l-plus) / 2);
+        }
+    }
+}

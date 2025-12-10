@@ -1,10 +1,26 @@
 {% set siteTitle= contacts.title %}
-{% set pageClass= "contacts" %}
+{% set pageClass= "contactpage" %}
 
 {% extends 'src/templates/layouts/base.twig' %}
 
 {% block content %}
 
-{% include 'src/templates/partials/page-header.twig' with {item:contacts.page_header} %}
+	<div class="content-wrapper content-wrapper--contactpage">
+
+		<div class="contactpage__block">
+			
+            {% include 'src/templates/partials/page-header.twig' with {item:contacts.page_header} %}
+			
+            {% include 'src/templates/partials/contacts-info.twig' %}
+
+		</div>
+
+		<div class="contactpage__block">
+
+            {% include 'src/templates/partials/contacts-form.twig' %}
+
+        </div>
+
+	</div>
 
 {% endblock %}
