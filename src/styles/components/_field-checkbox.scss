@@ -2,13 +2,18 @@
 @use '../base/mixins' as *;
 
 .field-checkbox {
-
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     column-gap: $space-xxs;
 
+    &__label {
+        cursor: pointer;
+    }
+
     &__input {
+        cursor: pointer;
         appearance: none;
         border-width: $border-width-xs;
         border-style: solid;
