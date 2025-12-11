@@ -94,31 +94,36 @@
         "picture_path": "/categories/ui-kits.svg",
         "picture_width": "150",
         "picture_height": "150",
-        "name": "UI Kits"
+        "name": "UI Kits",
+        "link": "/products"
       },
       {
         "picture_path": "/categories/social-media.svg",
         "picture_width": "150",
         "picture_height": "150",
-        "name": "Social Media"
+        "name": "Social Media",
+        "link": "/products"
       },
       {
         "picture_path": "/categories/presentations.svg",
         "picture_width": "150",
         "picture_height": "150",
-        "name": "Presentations"
+        "name": "Presentations",
+        "link": "/products"
       },
       {
         "picture_path": "/categories/fonts.svg",
         "picture_width": "150",
         "picture_height": "150",
-        "name": "Fonts"
+        "name": "Fonts",
+        "link": "/products"
       },
       {
         "picture_path": "/categories/illustrations.svg",
         "picture_width": "150",
         "picture_height": "150",
-        "name": "Illustrations"
+        "name": "Illustrations",
+        "link": "/products"
       }
     ],
     "categories_section": {
