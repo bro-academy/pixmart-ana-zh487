@@ -45,63 +45,63 @@ $lts-s: -0.5px;
 
 
 /* colors */
-$color-text-icon-primary: #0D0D15;
-$color-text-icon-secondary: #2A3541D9;
-$color-text-icon-tertiary: #2A3541B2;
-$color-text-icon-baseicon: #2735448C;
-$color-text-icon-disabled: #22344966;
-$color-text-icon-primary-invert: #F8F7FF;
-$color-text-icon-secondary-invert: #EFF5FAD1;
-$color-text-icon-tertiary-invert: #E7EEF7A8;
-$color-text-icon-baseicon-invert: #E7F1FD7D;
-$color-text-icon-disabled-invert: #E5ECFB5C;
-$color-text-icon-alternative: #1A1925;
-$color-text-icon-alternative-secondary: #1D1C28;
-$color-text-icon-additional: #222222;
+$color-text-icon-primary: rgba(13, 13, 21, 1);
+$color-text-icon-secondary: rgba(42, 53, 65, 0.851);
+$color-text-icon-tertiary: rgba(42, 53, 65, 0.698);
+$color-text-icon-baseicon: rgba(39, 53, 68, 0.549);
+$color-text-icon-disabled: rgba(34, 52, 73, 0.4);
+$color-text-icon-primary-invert: rgba(248, 247, 255, 1);
+$color-text-icon-secondary-invert: rgba(239, 245, 250, 0.82);
+$color-text-icon-tertiary-invert: rgba(231, 238, 247, 0.659);
+$color-text-icon-baseicon-invert: rgba(231, 241, 253, 0.49);
+$color-text-icon-disabled-invert: rgba(229, 236, 251, 0.361);
+$color-text-icon-alternative: rgba(26, 25, 37, 1);
+$color-text-icon-alternative-secondary: rgba(29, 28, 40, 1);
+$color-text-icon-additional: rgba(34, 34, 34, 1);
 
-$color-bg-base: #FFFFFF;
-$color-bg-alternative: #F8FAFC;
-$color-bg-alternative-secondary: #F4F7FA;
-$color-bg-base-invert: #0D0D15;
-$color-bg-alternative-invert: #1A1925;
-$color-bg-alternative-secondary-invert: #1D1C28;
-$color-bg-gradient: #F0F6FD;
+$color-bg-base: rgba(255, 255, 255, 1);
+$color-bg-alternative: rgba(248, 250, 252, 1);
+$color-bg-alternative-secondary: rgba(244, 247, 250, 1);
+$color-bg-base-invert: rgba(13, 13, 21, 1);
+$color-bg-alternative-invert: rgba(26, 25, 37, 1);
+$color-bg-alternative-secondary-invert: rgba(29, 28, 40, 1);
+$color-bg-gradient: rgba(240, 246, 253, 1);
 
-$color-accent: #0265DC;
-$color-line: #1F324745;
-$color-line-secondary: #22222226;
-$color-separator: #294D7517;
-$color-separator-bold: #1D36532B;
-$color-focus: #3892F3;
-$color-pressed: #0054B6;
-$color-accent-invert: #78BBFA;
-$color-line-invert: #D4D9F242;
-$color-separator-invert: #BFC5EE1F;
-$color-separator-bold-invert: #D0D7FB2B;
-$color-focus-invert: #96CEFD;
-$color-active: #B5DEFF;
+$color-accent: rgba(2, 101, 220, 1);
+$color-line: rgba(31, 50, 71, 0.271);
+$color-line-secondary: rgba(34, 34, 34, 0.149);
+$color-separator: rgba(41, 77, 117, 0.09);
+$color-separator-bold: rgba(29, 54, 83, 0.169);
+$color-focus: rgba(56, 146, 243, 1);
+$color-pressed: rgba(0, 84, 182, 1);
+$color-accent-invert: rgba(120, 187, 250, 1);
+$color-line-invert: rgba(212, 217, 242, 0.259);
+$color-separator-invert: rgba(191, 197, 238, 0.122);
+$color-separator-bold-invert: rgba(208, 215, 251, 0.169);
+$color-focus-invert: rgba(150, 206, 253, 1);
+$color-active: rgba(181, 222, 255, 1);
 
-$color-status-neutral: #899099;
-$color-status-negative: #EA3829;
-$color-status-high: #CB5D00;
-$color-status-medium: #F8D904;
-$color-status-info: #9D57F4;
-$color-status-positive: #008F5D;
-$color-status-new: #007772;
+$color-status-neutral: rgba(137, 144, 153, 1);
+$color-status-negative: rgba(234, 56, 41, 1);
+$color-status-high: rgba(203, 93, 0, 1);
+$color-status-medium: rgba(248, 217, 4, 1);
+$color-status-info: rgba(157, 87, 244, 1);
+$color-status-positive: rgba(0, 143, 93, 1);
+$color-status-new: rgba(0, 119, 114, 1);
 
-$color-neutral-primary: #F5F8FB;
-$color-neutral-secondary: #EFF5FAD1;
-$color-neutral-tertiary: #E7EEF7A8;
-$color-neutral-base-icon: #2735448C;
-$color-neutral-disabled: #22344966;
-$color-neutral-line: #D4D9F242;
-$color-neutral-base-icon: #E7F1FD7D;
-$color-neutral-separator: #BFC5EE1F;
-$color-neutral-separator-bold: #D0D7FB2B;
-$color-neutral-alternative: #D0D7FB2B;
-$color-neutral-alternative-secondary: #F4F7FA;
+$color-neutral-primary: rgba(245, 248, 251, 1);
+$color-neutral-secondary: rgba(239, 245, 250, 0.82);
+$color-neutral-tertiary: rgba(231, 238, 247, 0.659);
+$color-neutral-base-icon: rgba(231, 241, 253, 0.49);
+$color-neutral-disabled: rgba(34, 52, 73, 0.4);
+$color-neutral-line: rgba(212, 217, 242, 0.259);
+$color-neutral-separator: rgba(191, 197, 238, 0.122);
+$color-neutral-separator-bold: rgba(208, 215, 251, 0.169);
+$color-neutral-alternative: rgba(208, 215, 251, 0.169);
+$color-neutral-alternative-secondary: rgba(244, 247, 250, 1);
 
-$color-box-shadow: #1D395F14;
+$color-box-shadow: rgba(29, 57, 95, 0.078);
+
 
 
 /* spacing */
