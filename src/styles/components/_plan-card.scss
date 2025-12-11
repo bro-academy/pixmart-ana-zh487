@@ -87,7 +87,7 @@
     border: $border-width-s solid $color-accent;
 
     @include tab {
-        transform: translateY(-32px);
+        transform: translateY(-$space-l-minus);
     }
 
 }
