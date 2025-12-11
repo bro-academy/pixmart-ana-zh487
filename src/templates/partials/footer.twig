@@ -28,7 +28,7 @@
 			<div class="footer__top-item">
 				<div class="footer__socials">
 					{% for item in common.footer.socials %}
-						<a href="{{ item.link }}" class="footer__socials-button button button--large button--icon">
+						<a href="{{ item.link }}" class="footer__socials-button button button--large button--icon" target="_blank">
 							{{ icon ("footer__socials-button-icon button__icon", item.icon, 24, 24) }}
 						</a>
 					{% endfor %}
