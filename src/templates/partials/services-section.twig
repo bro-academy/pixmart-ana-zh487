@@ -1,11 +1,9 @@
 <section class="services-section">
-	<div class="content-wrapper">
-		<ul class="services-section__list">
-			{% for item in index.services_section %}
-				<li class="services-section__item">
-					{% include '/service-card.twig' %}
-				</li>
-			{% endfor %}
-		</ul>
-	</div>
+	<ul class="services-section__list content-wrapper">
+		{% for item in index.services_section %}
+			<li class="services-section__item">
+				{% include '/service-card.twig' %}
+			</li>
+		{% endfor %}
+	</ul>
 </section>
