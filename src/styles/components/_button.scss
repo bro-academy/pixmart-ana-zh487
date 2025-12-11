@@ -44,17 +44,17 @@
         box-shadow: inset 0 0 0 $border-width-xs $color-separator;
     }
 
+    &:active {
+        background-color: $color-separator;
+        border-color: $color-separator;
+        box-shadow: inset 0 0 0 $border-width-xs $color-separator;
+    }
+
     &:focus {
         background-color: $color-separator;
         border-color: $color-focus;
         outline-color: $color-focus;
         box-shadow: inset 0 0 0 $border-width-xs $color-focus;
-    }
-
-    &:active {
-        background-color: $color-separator;
-        border-color: $color-separator;
-        box-shadow: inset 0 0 0 $border-width-xs $color-separator;
     }
 
     &:disabled {
@@ -78,14 +78,14 @@
         box-shadow: inset 0 0 0 1px transparent;
     }
 
-    &:focus {
-        background-color: $color-accent;
-    }
-
     &:active {
         background-color: $color-pressed;
         border-color: transparent;
         box-shadow: inset 0 0 0 1px transparent;
+    }
+
+    &:focus {
+        background-color: $color-accent;
     }
 
     &:disabled {

@@ -9,10 +9,12 @@
 
     padding: $space-xs-minus;
 
-    border-width: $border-width-s;
+    border-width: $border-width-xs;
     border-style: solid;
     border-color: $color-separator-bold;
     border-radius: $border-radius-m;
+
+    box-shadow: inset 0 0 0 1px $color-separator-bold;
 
     outline-style: solid;
     outline-width: $outline-width-xs;
@@ -22,17 +24,19 @@
         color: $color-text-icon-tertiary;
     }
 
-    @include transition((border-color, outline-width, outline-color, color, background-color));
+    @include transition((border-color, box-shadow, outline-width, outline-color, color, background-color));
 
     @include hover {
         border-color: $color-focus;
         outline-color: $color-focus;
+        box-shadow: inset 0 0 0 $border-width-xs $color-focus;
     }
 
     &:focus {
         border-color: $color-focus;
         outline-width: $border-width-s;
         outline-color: $color-focus;
+        box-shadow: inset 0 0 0 $border-width-xs $color-focus;
     }
 
     $self: &;
