@@ -1,7 +1,11 @@
-{% set siteTitle= contacts.title %}
 {% set pageClass= "contactpage" %}
 
 {% extends 'src/templates/layouts/base.twig' %}
+
+{% block title %}
+<title>{{ contacts.title }}</title>
+<meta name="description" content="{{ contacts.description }}">
+{% endblock %}
 
 {% block content %}
 

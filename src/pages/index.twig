@@ -1,7 +1,11 @@
-{% set siteTitle= index.title %}
 {% set pageClass= "homepage" %}
 
 {% extends 'src/templates/layouts/base.twig' %}
+
+{% block title %}
+<title>{{ index.title }}</title>
+<meta name="description" content="{{ index.description }}">
+{% endblock %}
 
 {% block content %}
   

@@ -1,7 +1,11 @@
-{% set siteTitle= products.title %}
 {% set pageClass= "products" %}
 
 {% extends 'src/templates/layouts/base.twig' %}
+
+{% block title %}
+<title>{{ products.title }}</title>
+<meta name="description" content="{{ products.description }}">
+{% endblock %}
 
 {% block content %}
 
