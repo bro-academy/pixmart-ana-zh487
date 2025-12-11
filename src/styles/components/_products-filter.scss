@@ -3,6 +3,8 @@
 
 .products-filter {
 
+    @include transition((opacity));
+
     &__header {
         position: sticky;
         top: 0;
