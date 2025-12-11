@@ -39,7 +39,12 @@
     &__buttons {
         display: flex;
         flex-wrap: wrap;
-        gap: $space-m;
+        gap: $space-m-minus;
+
+        @include tab {
+            gap: $space-m;
+        }
+        
     }
 
     &__button-icon {

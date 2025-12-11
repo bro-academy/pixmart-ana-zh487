@@ -20,7 +20,7 @@
 			<p class="hero-section__description">{{ index.hero_section.description }}</p>
 			<div class="hero-section__buttons">
 				{% for item in index.hero_section.buttons %}
-					<button type="button" class="hero-section__button button button--large{% if item.is_accent == "yes" %} button--accent{% endif %}">
+					<button type="button" class="hero-section__button button button--large{% if item.is_accent == "yes" %} button--accent{% endif %}{% if item.is_alternative == "yes" %} button--alternative{% endif %}">
 						{% if item.icon %}
 							{{ icon ("hero-section__button-icon button__icon", item.icon, 20, 20) }}
 						{% endif %}

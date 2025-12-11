@@ -23,7 +23,8 @@
         },
         {
           "text": "Watch About Us",
-          "icon": "play_fill"
+          "icon": "play_fill",
+          "is_alternative": "yes"
         }
       ],
       "illustrations": [
