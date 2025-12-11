@@ -4,5 +4,6 @@
 	<button type="submit" class="search__button mob-vis tab-hid">
 	{{ icon ("search__button-icon", "search", 24, 24) }}
 	</button>
-	<input type="search" placeholder="{{ item.placeholder }}" name="{{ item.name }}" class="search__input mob-hid tab-vis" minlength="2" maxlength="500" required/>
+	<input type="search" placeholder="{{ item.placeholder }}" name="{{ item.name }}" id="{{ item.id }}" class="search__input mob-hid tab-vis" minlength="2" maxlength="500" required/>
+	<label for="{{ item.id }}" class="search__label {% if not item.label %}mob-hid{% endif %}">{{ item.label }}</label>
 </form>

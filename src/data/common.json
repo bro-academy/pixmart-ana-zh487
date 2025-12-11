@@ -27,6 +27,7 @@
       "search": {
         "action": "",
         "name": "search_header",
+        "id": "search_header",
         "placeholder": "Search for Digital Assets"
       }
     },

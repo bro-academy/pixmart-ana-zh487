@@ -1,12 +1,12 @@
 <div class="field-default field-select">
-	{% if field.label %}
+
 	<label 
 		for="{{ field.id }}"
-		class="label-default"
+		class="label-default
+		{% if not item.label %}mob-hid{% endif %}"
 	>
 		{{ field.label }}
 	</label>
-	{% endif %}
 
 	<select class="field-select__input" name="{{ field.name }}" id="{{ field.id }}">
 		{% for option in field.options %}
