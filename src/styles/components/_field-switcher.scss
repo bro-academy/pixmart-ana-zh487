@@ -33,6 +33,7 @@
         align-items: center;
         column-gap: $space-xs-minus;
         position: relative;
+        margin-block: $space-xxs-minus;
 
         &::before {
             content: '';
@@ -44,7 +45,9 @@
             outline-style: solid;
             outline-color: transparent;
             outline-offset: $outline-width-s;
-            @include transition((background-color, outline-color))
+            flex-shrink: 0;
+            align-self: start;
+            @include transition((background-color, outline-color));
         }
 
         &::after {

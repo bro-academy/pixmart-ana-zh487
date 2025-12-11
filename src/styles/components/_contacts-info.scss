@@ -33,6 +33,7 @@
 
     &__details-icon {
         fill: $color-accent;
+        flex-shrink: 0;
     }
 
     &__map {
@@ -60,6 +61,7 @@
 
     &__map-icon {
         fill: $color-accent;
+        flex-shrink: 0;
     }
 
     &__map-name {

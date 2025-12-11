@@ -80,6 +80,7 @@
 
     &__benefits-icon {
         fill: $color-accent;
+        flex-shrink: 0;
     }
 }
 

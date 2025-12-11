@@ -27,6 +27,8 @@
         outline-offset: $outline-width-xs;
         outline-color: transparent;
         background-color: $color-bg-base;
+        flex-shrink: 0;
+        align-self: start;
 
         &:checked {
             border-width: $border-width-l;

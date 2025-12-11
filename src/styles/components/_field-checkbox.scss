@@ -30,6 +30,8 @@
         justify-content: center;
         align-items: center;
         background-color: $color-bg-base;
+        flex-shrink: 0;
+        align-self: start;
 
         &::before {
             content: '';

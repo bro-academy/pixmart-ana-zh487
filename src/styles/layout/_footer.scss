@@ -72,6 +72,10 @@
         }
     }
 
+    &__top-nav-menu {
+        max-width: $footer-menu-width;
+    }
+
     &__top-nav-title {
         margin-block-end: $space-s;
     }
@@ -130,6 +134,10 @@
         }
     }
 
+    &__bottom-nav {
+        flex-shrink: 0;
+    }
+
     &__bottom-nav-list {
         display: flex;
         align-items: center;
@@ -141,6 +149,10 @@
         font-size: $fs-text-l;
         line-height: $lh-text-l;
         font-weight: $fw-xs;
+
+        &:visited {
+            color: $color-text-icon-tertiary-invert;
+        }
     }
 
     &__bottom-nav-item:not(:last-child)::after {
