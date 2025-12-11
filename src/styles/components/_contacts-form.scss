@@ -18,6 +18,12 @@
         gap: $space-m-minus;
     }
 
+    &__field {
+        display: flex;
+        flex-direction: column;
+        gap: $space-xxs-plus;
+    }
+
     & .field-text__input {
         width: 100%;
     }

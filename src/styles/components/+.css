@@ -10,11 +10,11 @@
 @import "./_faq-section.scss";
 @import "./_featured-picture.scss";
 @import "./_field-checkbox.scss";
-@import "./_field-default.scss";
 @import "./_field-radio.scss";
 @import "./_field-select.scss";
 @import "./_field-switcher.scss";
 @import "./_field-textarea.scss";
+@import "./_filter-form.scss";
 @import "./_heading-l.scss";
 @import "./_heading-m.scss";
 @import "./_heading-s.scss";

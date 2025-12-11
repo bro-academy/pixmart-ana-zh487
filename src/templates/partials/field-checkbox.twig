@@ -1,4 +1,4 @@
-<div class="field-default field-checkbox {% if field.switcher == "yes" %}field-switcher{% endif %}">
+<div class="{{ form_class }}__field field-checkbox {% if field.switcher == "yes" %}field-switcher{% endif %}">
 	<input 
         type="checkbox" 
         id="{{ field.id }}" 

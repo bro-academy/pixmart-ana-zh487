@@ -12,7 +12,6 @@
 @use '../styles/components/button';
 @use '../styles/components/input-default';
 @use '../styles/components/label-default';
-@use '../styles/components/field-default';
 @use '../styles/components/field-checkbox';
 @use '../styles/components/field-radio';
 @use '../styles/components/field-switcher';
@@ -34,6 +33,7 @@
 @use '../styles/components/page-header';
 @use '../styles/components/products-listing';
 @use '../styles/components/products-filter';
+@use '../styles/components/filter-form';
 @use '../styles/components/product-card';
 @use '../styles/components/featured-picture';
 @use '../styles/components/blogpage-content';

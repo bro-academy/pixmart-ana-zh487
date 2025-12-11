@@ -1,0 +1,27 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: $space-l-plus;
+    padding-block: $space-l-plus;
+    padding-inline: $space-s;
+
+    @include desk {
+        width: $products-filter-width;
+        padding: 0;
+    }
+
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: $space-m;
+    }
+
+    &__fieldset-list {
+        display: flex;
+        flex-direction: column;
+        gap: $space-xs-plus;
+    }
+}

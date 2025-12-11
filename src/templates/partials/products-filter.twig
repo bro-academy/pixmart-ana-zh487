@@ -7,21 +7,21 @@
 		<input type="checkbox" id="products-filter-toggler" class="products-filter__toggler button button--icon"/>
 	</div>
 
-	<form action="" method="post" class="products-filter__form">
+	<form action="" method="post" class="filter-form">
 
 		{% for item in products.sidebar.filter.fieldsets %}
-			<div class="products-filter__fieldset">
-				<h2 class="products-filter__fieldset-heading heading-s">{{ item.heading }}</h2>
-				<div class="products-filter__fieldset-list">
+			<div class="filter-form__fieldset">
+				<h2 class="filter-form__fieldset-heading heading-s">{{ item.heading }}</h2>
+				<div class="filter-form__fieldset-list">
 					{% for field in item.fields %}
-						{% include '/field-list.twig' %}
+						{% include '/field-list.twig'  with { form_class:"filter_form" } %}
 					{% endfor %}
 				</div>
 			</div>
 		{% endfor %}
 
-		<button type="reset" class="button products-filter__form-button">
-			{{ icon ("products-filter__button-icon button__icon", "close", 24, 24) }}
+		<button type="reset" class="button filter-form__button">
+			{{ icon ("button__icon", "close", 24, 24) }}
 			{{ products.sidebar.filter.button_reset.text }}
 		</button>
 

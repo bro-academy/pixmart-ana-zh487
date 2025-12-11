@@ -2,7 +2,7 @@
 
 	<div class="contacts-form__fieldset">
 		{% for field in contacts.form.fields %}
-			{% include '/field-list.twig' %}
+			{% include '/field-list.twig' with {field:field, form_class:"contacts-form"} %}
 		{% endfor %}
 	</div>
 
@@ -10,7 +10,7 @@
 		<ul class="contacts-form__consents-list">
 			{% for item in contacts.form.consents %}
 				<li class="contacts-form__consents-item">
-					{% include '/field-checkbox.twig' with {field:item} %}
+					{% include '/field-checkbox.twig' with {field:item, form_class:"contacts-form__consents"} %}
 				</li>
 			{% endfor %}
 		</ul>
