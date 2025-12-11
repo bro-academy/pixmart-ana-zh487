@@ -39,7 +39,7 @@
 
         &::before {
             content: '';
-            border-radius: 0 0 $border-radius-xxxxl $border-radius-xxxxl;
+            border-radius: 0 0 $border-radius-xl $border-radius-xl;
             background: linear-gradient(to top, $color-bg-alternative-secondary, transparent);
             grid-column-start: 2;
             grid-row-start: 1;
@@ -47,7 +47,7 @@
 
         &::after {
             content: '';
-            border-radius: $border-radius-xxxxl $border-radius-xxxxl 0 0;
+            border-radius: $border-radius-xl $border-radius-xl 0 0;
             background: linear-gradient(to bottom, $color-bg-alternative-secondary, transparent);
         }
     }

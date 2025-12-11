@@ -43,13 +43,13 @@
     &:user-invalid {
         border-color: $color-status-negative;
 
-        & + &__text {
+        &+&__text {
             color: $color-status-negative;
         }
     }
 
     &:user-valid {
-        & + &__text {
+        &+&__text {
             color: $color-status-positive;
         }
     }

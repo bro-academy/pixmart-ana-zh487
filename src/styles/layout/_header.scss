@@ -97,7 +97,7 @@
     &__burger-bar {
         width: $burger-bar-width;
         height: $burger-bar-height;
-        border-radius: $border-radius-xxxs;
+        border-radius: $border-radius-xxs;
         background-color: $color-text-icon-primary-invert;
         @include transition((opacity, transform));
     }
