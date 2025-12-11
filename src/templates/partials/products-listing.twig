@@ -4,9 +4,9 @@
 	<header class="products-listing__header">
 		<div class="products-listing__controls">
 			<div class="products-listing__controls-block">
-				<div class="products-listing__select">
-					{% include '/field-select.twig' with { field:products.list_header.select } %}
-				</div>
+				<form action="" method="post" class="products-listing__select form-select">
+					{% include '/field-select.twig' with { field:products.list_header.select, form_class:"form-select" } %}
+				</form>
 				<label for="products-filter-toggler" class="products-listing__toggler desk-hid button button--accent button--icon">{{ icon ("product-card__button-icon button__icon", "filter", 24, 24) }}</label>
 			</div>
 			<div class="products-listing__controls-block">
