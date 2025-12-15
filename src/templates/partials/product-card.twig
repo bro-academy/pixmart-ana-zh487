@@ -3,6 +3,7 @@
 
 <article class="product-card product-card--{% if item.label == 'Sold out' %}soldout{% elseif item.label == 'New' %}new{% elseif item.label == 'Popular' %}popular{% endif %}">
 
+<a href={{ item.link }} class="product-card__link">
 	{{ picture(
 	"product-card__img",
 	item.picture.srcMob,
@@ -32,11 +33,14 @@
             {% else %}{{ item.price }}
             {% endif %}
             </span>
-            <div class="product-card__actions">
-                <button type="button" class="product-card__button button button--icon">{{ icon ("product-card__button-icon button__icon", "heart", 24, 24) }}</button>
-                <button type="button" class="product-card__button button button--icon button--accent">{{ icon ("product-card__button-icon button__icon", "shop", 24, 24) }}</button>
-            </div>
         </div>
 	</div>
+
+    </a>
+
+    <div class="product-card__actions">
+        <button type="button" class="product-card__button button button--icon">{{ icon ("product-card__button-icon button__icon", "heart", 24, 24) }}</button>
+        <button type="button" class="product-card__button button button--icon button--accent">{{ icon ("product-card__button-icon button__icon", "shop", 24, 24) }}</button>
+    </div>
 
 </article>

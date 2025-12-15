@@ -5,11 +5,20 @@
 
     position: relative;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: $space-m-minus;
+    &__link {
 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: $space-m-minus;
+
+        @include hover {
+            .product-card__price {
+                color: $color-accent;
+            }
+        }
+    }
+    
     &__body {
         display: flex;
         flex-direction: column;
@@ -59,7 +68,6 @@
 
     &__purchase {
         display: flex;
-        justify-content: space-between;
         gap: $space-xs-plus;
         align-items: center;
         flex-grow: 1;
@@ -69,10 +77,10 @@
         @include transition((color), .2s);
     }
 
-    @include hover {
-        .product-card__price {
-            color: $color-accent;
-        }
+    &__actions {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 
 }

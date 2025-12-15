@@ -245,6 +245,7 @@
     "list": [
       {
         "label": "Sold out",
+        "link": "#",
         "picture": {
           "srcMob": "/products/lens_chronicles_mob.jpg",
           "alt": "Lens Chronicles",
@@ -266,6 +267,7 @@
       },
       {
         "label": "New",
+        "link": "#",
         "picture": {
           "srcMob": "/products/career_success_mob.jpg",
           "alt": "Career Success",
@@ -287,6 +289,7 @@
       },
       {
         "label": "Popular",
+        "link": "#",
         "picture": {
           "srcMob": "/products/dream_homes_mob.jpg",
           "alt": "Dream Homes",
@@ -308,6 +311,7 @@
       },
       {
         "label": "Popular",
+        "link": "#",
         "picture": {
           "srcMob": "/products/foodish_catering_mob.jpg",
           "alt": "Foodish Catering",
@@ -329,6 +333,7 @@
       },
       {
         "label": "New",
+        "link": "#",
         "picture": {
           "srcMob": "/products/caring_hearts_mob.jpg",
           "alt": "Caring Hearts",
@@ -350,6 +355,7 @@
       },
       {
         "label": "Sold out",
+        "link": "#",
         "picture": {
           "srcMob": "/products/gaming_rise_mob.jpg",
           "alt": "Gaming Rise",
@@ -371,6 +377,7 @@
       },
       {
         "label": "Sold out",
+        "link": "#",
         "picture": {
           "srcMob": "/products/edit_pro_mob.jpg",
           "alt": "Edit Pro",
@@ -392,6 +399,7 @@
       },
       {
         "label": "New",
+        "link": "#",
         "picture": {
           "srcMob": "products/banking_redefined_mob.jpg",
           "alt": "Banking Redefined",
@@ -413,6 +421,7 @@
       },
       {
         "label": "Popular",
+        "link": "#",
         "picture": {
           "srcMob": "/products/exploring_fun_mob.jpg",
           "alt": "Exploring Fun",
@@ -434,6 +443,7 @@
       },
       {
         "label": "Popular",
+        "link": "#",
         "picture": {
           "srcMob": "/products/admin_dashboard_mob.jpg",
           "alt": "Admin Dashboard",
@@ -455,6 +465,7 @@
       },
       {
         "label": "New",
+        "link": "#",
         "picture": {
           "srcMob": "/products/analytical_dashboard_mob.jpg",
           "alt": "Analytical Dashboard",
@@ -476,6 +487,7 @@
       },
       {
         "label": "Sold out",
+        "link": "#",
         "picture": {
           "srcMob": "/products/kindergarten_mob.jpg",
           "alt": "Kindergarten",
