@@ -12,8 +12,20 @@
 		{% for item in contacts.info.details %}
 
 			<li class="contacts-info__details-item">
-				{{ icon ("contacts-info__details-icon", item.icon, 24, 24) }}
-				{{ item.content }}
+			{% if item.type == "phone" %}
+				<a href="tel:{{ item.content|replace({' ': '', '(': '', ')': '', '-': ''}) }}" target="_blank" class="contacts-info__details-link link">
+					{{ icon ("contacts-info__details-icon", item.icon, 24, 24) }}
+					{{ item.content }}
+				</a>
+			{% elseif item.type == "email" %}
+				<a href="mailto:{{ item.content }}" target="_blank" class="contacts-info__details-link link">
+					{{ icon ("contacts-info__details-icon", item.icon, 24, 24) }}
+					{{ item.content }}
+				</a>
+			{% else %}
+					{{ icon ("contacts-info__details-icon", item.icon, 24, 24) }}
+					{{ item.content }}
+			{% endif %}
 			</li>
 
 		{% endfor %}

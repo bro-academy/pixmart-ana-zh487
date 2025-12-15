@@ -36,6 +36,11 @@
         flex-shrink: 0;
     }
 
+    &__details-link {
+        color: $color-text-icon-primary;
+        font-size: $fs-text-xl;
+    }
+
     &__map {
         position: relative;
     }

@@ -21,10 +21,12 @@
       "details": [
         {
           "icon": "phone",
+          "type": "phone",
           "content": "+1 (555) 123-4567"
         },
         {
           "icon": "mail",
+          "type": "email",
           "content": "support@pixelmart.com"
         },
         {
