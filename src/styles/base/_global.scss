@@ -37,6 +37,10 @@ ul {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 @each $name, $value in $breakpoints {
     .#{$name}-hid {
         @media (min-width: $value) {

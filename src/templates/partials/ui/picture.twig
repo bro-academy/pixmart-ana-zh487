@@ -12,19 +12,19 @@
   <picture class="{{ classes }}-wrapper">
     {# Desktop #}
     {% if srcDesktop %}
-      <source media="(min-width: 1440px)" srcset="/src/assets/images/{{ srcDesktop }}?format=webp" type="image/webp">
-      <source media="(min-width: 1440px)" srcset="/src/assets/images/{{ srcDesktop }}?format=avif" type="image/avif">
-      <source media="(min-width: 1440px)" srcset="/src/assets/images/{{ srcDesktop }}">
+      <source media="(min-width: 1440px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcDesktop }}?format=webp" type="image/webp">
+      <source media="(min-width: 1440px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcDesktop }}?format=avif" type="image/avif">
+      <source media="(min-width: 1440px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcDesktop }}">
     {% endif %}
     {# Tablet #}
     {% if srcTablet %}
-      <source media="(min-width: 1024px)" srcset="/src/assets/images/{{ srcTablet }}?format=webp" type="image/webp">
-      <source media="(min-width: 1024px)" srcset="/src/assets/images/{{ srcTablet }}?format=avif" type="image/avif">
-      <source media="(min-width: 1024px)" srcset="/src/assets/images/{{ srcTablet }}">
+      <source media="(min-width: 1024px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcTablet }}?format=webp" type="image/webp">
+      <source media="(min-width: 1024px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcTablet }}?format=avif" type="image/avif">
+      <source media="(min-width: 1024px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcTablet }}">
     {% endif %}
     {# Default (mobile) #}
-    <source srcset="/src/assets/images/{{ src }}?format=webp" type="image/webp">
-    <source srcset="/src/assets/images/{{ src }}?format=avif" type="image/avif">
+    <source srcset="/src/assets/images/{{ src }}?format=webp" width="{{ width }}" height="{{ height }}" type="image/webp">
+    <source srcset="/src/assets/images/{{ src }}?format=avif" width="{{ width }}" height="{{ height }}" type="image/avif">
     <img
       class="{{ classes }}"
       src="/src/assets/images/{{ src }}"
