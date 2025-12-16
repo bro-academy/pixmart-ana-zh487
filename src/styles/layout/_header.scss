@@ -79,16 +79,16 @@
             position: relative;
         }
 
-        &.show-x .header__burger-bar-1 {
+        &.show-x .header__burger-bar--top {
             transform: rotate(45deg);
             top: 5px;
         }
 
-        &.show-x .header__burger-bar-2 {
+        &.show-x .header__burger-bar--middle {
             opacity: 0;
         }
 
-        &.show-x .header__burger-bar-3 {
+        &.show-x .header__burger-bar--bottom {
             transform: rotate(-45deg);
             top: -7px;
         }
