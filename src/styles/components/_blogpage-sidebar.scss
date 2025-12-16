@@ -72,6 +72,14 @@
         row-gap: $space-m;
     }
 
+    &__latest-item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: $space-xs-plus;
+    }
+
     &__latest-item:not(:last-child) {
         border-bottom: $border-width-xs solid $color-line-secondary;
         padding-block-end: $space-m;
@@ -89,7 +97,6 @@
         line-height: $lh-title-xs;
         color: $color-text-icon-primary;
         font-weight: $fw-l;
-        margin-block-end: $space-xs-plus;
     }
 
 }

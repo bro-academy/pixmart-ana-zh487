@@ -19,7 +19,7 @@
 		</div>
 		<div class="blogpage-sidebar__info-block">
 			<p class="blogpage-sidebar__author-name heading-xs">{{ item.article_info.author_name }}</p>
-			<p class="blogpage-sidebar__article-date">{{ item.article_info.article_date }}</p>
+			<time datetime="{{ item.article_info.article_date|date('Y-m-d') }}" class="blogpage-sidebar__article-date">{{ item.article_info.article_date }}</time>
 		</div>
 	</div>
 
@@ -49,7 +49,7 @@
 			{% for module in item.latest_articles.list %}
 				<li class="blogpage-sidebar__latest-item">
 					<a href={{ module.link }} class="blogpage-sidebar__latest-link link">{{ module.text }}</a>
-					<p class="blogpage-sidebar__latest-date">{{ module.date }}</p>
+					<time datetime="{{ module.date|date('Y-m-d') }}" class="blogpage-sidebar__latest-date">{{ module.date }}</time>
 				</li>
 			{% endfor %}
 		</ul>
