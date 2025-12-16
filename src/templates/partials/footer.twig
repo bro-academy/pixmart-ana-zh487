@@ -13,7 +13,7 @@
 				<nav class="footer__top-nav">
 					{% for menu in common.footer.navigation %}
 						<div class="footer__top-nav-menu">
-							<h4 class="footer__top-nav-title title-xs">{{ menu.title }}</h4>
+							<p class="footer__top-nav-title heading-xs">{{ menu.title }}</p>
 							<ul class="footer__top-nav-list">
 								{% for item in menu.list %}
 									<li class="footer__top-nav-item">
@@ -34,7 +34,7 @@
 					{% endfor %}
 				</div>
 				<form action="/" method="post" class="footer__subscribe-form">
-					<h3 class="footer__subscribe-title title-s">{{ common.footer.subscribe.title }}</h3>
+					<h2 class="footer__subscribe-title heading-s">{{ common.footer.subscribe.title }}</h2>
 					<div class="footer__subscribe-content">
 						{% for field in common.footer.subscribe.form.fields_list %}
 							{% include '/field-list.twig' %}

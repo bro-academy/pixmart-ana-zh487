@@ -19,16 +19,12 @@
         }
     }
 
-    &__content {
-        order: -1;
-
-        @include tab {
-            order: 0;
-        }
-    }
-
     &__cards {
         width: 100%;
+
+        @include tab {
+            order: -1;
+        }
     }
 
     &__list {
