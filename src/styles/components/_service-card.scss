@@ -3,11 +3,6 @@
 
 .service-card {
 
-    display: flex;
-    flex-direction: column;
-    gap: $space-m-minus;
-    position: relative;
-
     &__illustration {
         background-color: $color-bg-alternative-secondary;
         display: flex;
@@ -33,8 +28,10 @@
     }
 
     &__link {
-        position: absolute;
-        inset: 0;
+        display: flex;
+        flex-direction: column;
+        gap: $space-m-minus;
+        color: $color-text-icon-primary;
     }
 
     @include hover {
