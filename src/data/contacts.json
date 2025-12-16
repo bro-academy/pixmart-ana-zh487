@@ -16,6 +16,7 @@
       ]
     },
     "info": {
+      "heading": "Contact Information",
       "description": "We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.",
       "button_text": "Shop Now",
       "details": [
@@ -43,6 +44,7 @@
       }
     },
     "form": {
+      "heading": "Send Us a Message",
       "fields": [
         {
           "type": "text",

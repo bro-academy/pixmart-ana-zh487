@@ -1,5 +1,7 @@
 <form action="/" method="post" class="contacts-form">
 
+	<h2 class="contacts-form__heading mob-hid">{{ contacts.form.heading }}</h2>
+
 	<div class="contacts-form__fieldset">
 		{% for field in contacts.form.fields %}
 			{% include '/field-list.twig' with {field:field, form_class:"contacts-form"} %}
