@@ -7,6 +7,8 @@
     flex-direction: column;
     row-gap: $space-l-plus;
 
+    order: -1;
+
     & > div:not(:last-child) {
         border-bottom: $border-width-s solid $color-text-icon-primary;
         padding-block-end: $space-l-plus;

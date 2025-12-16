@@ -27,6 +27,7 @@
       "srcDesk": "/blog/presentation_desk.jpg"
     },
     "sidebar": {
+      "heading": "Blog Overview",
       "article_info": {
         "author_name": "Emma Clarke",
         "author_avatar": "/blog/author_avatar.png",

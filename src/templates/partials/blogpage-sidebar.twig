@@ -3,6 +3,8 @@
 
 <aside class="blogpage-sidebar">
 
+<h2 class="blogpage-sidebar__heading mob-hid">{{ item.heading }}</h2>
+
 	<div class="blogpage-sidebar__info">
 		<div class="blogpage-sidebar__info-block">
 			<div class="blogpage-sidebar__author-avatar">
@@ -24,7 +26,7 @@
 	</div>
 
 	<div class="blogpage-sidebar__categories">
-		<h2 class="blogpage-sidebar__heading heading-xs blogpage-subheading">{{ item.categories.heading }}</h2>
+		<h3 class="blogpage-sidebar__heading heading-xs blogpage-subheading">{{ item.categories.heading }}</h3>
 		<ul class="blogpage-sidebar__categories-list">
 			{% for module in item.categories.list %}
 				<li class="blogpage-sidebar__categories-item">
@@ -44,7 +46,7 @@
 	</div>
 
 	<div class="blogpage-sidebar__latest">
-		<h2 class="blogpage-sidebar__heading heading-xs blogpage-subheading">{{ item.latest_articles.heading }}</h2>
+		<h3 class="blogpage-sidebar__heading heading-xs blogpage-subheading">{{ item.latest_articles.heading }}</h3>
 		<ul class="blogpage-sidebar__latest-list">
 			{% for module in item.latest_articles.list %}
 				<li class="blogpage-sidebar__latest-item">
