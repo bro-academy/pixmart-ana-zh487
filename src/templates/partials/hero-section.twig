@@ -10,7 +10,7 @@
 				<h1 class="hero-section__heading heading-xl">
 					{% for item in index.hero_section.heading %}
 						{% if item.is_highlighted == "yes" %}
-							<span class="heading-xl__highlighted">{{ item.text }}</span>
+							<span class="highlighted">{{ item.text }}</span>
 						{% else %}
 							{{ item.text }}
 						{% endif %}

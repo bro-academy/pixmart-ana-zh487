@@ -13,7 +13,7 @@
 		<h1 class="page-header__heading heading-xl heading-xl--mob-small">
 			{% for part in item.heading %}
 				{% if part.is_highlighted == "yes" %}
-					<span class="heading-xl__highlighted">{{ part.text }}</span>
+					<span class="highlighted">{{ part.text }}</span>
 				{% else %}
 					{{ part.text }}
 				{% endif %}
