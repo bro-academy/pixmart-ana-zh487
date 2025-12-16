@@ -37,7 +37,7 @@
 					<h2 class="footer__subscribe-title heading-s">{{ common.footer.subscribe.title }}</h2>
 					<div class="footer__subscribe-content">
 						{% for field in common.footer.subscribe.form.fields_list %}
-							{% include '/field-list.twig' %}
+							{% include '/field-list.twig' with {form_class:"footer__subscribe-form"} %}
 						{% endfor %}
 						<button type="submit" class="footer__subscribe-button button button--accent">{{ common.footer.subscribe.form.button_text }}</button>
 					</div>

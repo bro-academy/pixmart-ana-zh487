@@ -14,7 +14,7 @@
 				<h3 class="filter-form__fieldset-heading heading-s">{{ item.heading }}</h3>
 				<div class="filter-form__fieldset-list">
 					{% for field in item.fields %}
-						{% include '/field-list.twig'  with { form_class:"filter_form" } %}
+						{% include '/field-list.twig'  with { form_class:"filter-form" } %}
 					{% endfor %}
 				</div>
 			</div>
