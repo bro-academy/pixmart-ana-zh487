@@ -187,6 +187,7 @@
       }
     },
     "list_header": {
+      "heading": "Design Assets Catalog",
       "select": {
         "name": "type",
         "id": "type",
