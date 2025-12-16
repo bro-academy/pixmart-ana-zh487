@@ -25,7 +25,6 @@
         }
       ],
       "search": {
-        "action": "",
         "name": "search_header",
         "id": "search_header",
         "placeholder": "Search for Digital Assets"
@@ -139,7 +138,6 @@
       "subscribe": {
         "title": "Subscribe to <br>Design Newsletter",
         "form": {
-          "action": "",
           "fields_list": [
             {
               "type": "email",
