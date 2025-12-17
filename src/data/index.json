@@ -27,68 +27,18 @@
           "is_alternative": "yes"
         }
       ],
-      "illustrations": [
-        {
-          "type": "picture",
-          "srcMob": "/hero/pictures/pic_3_mob.png",
-          "alt": "Website example",
-          "width": "242",
-          "height": "140",
-          "srcTab": "/hero/pictures/pic_3_tab.png",
-          "srcDesk": "/hero/pictures/pic_3_desk.png",
-          "largeVertical": "no",
-          "largeHorizontal": "yes",
-          "horizontal": "no"
-        },
-        {
-          "type": "picture",
-          "srcMob": "/hero/pictures/pic_1_mob.png",
-          "alt": "Website example",
-          "width": "131",
-          "height": "197",
-          "srcTab": "/hero/pictures/pic_1_tab.png",
-          "srcDesk": "/hero/pictures/pic_1_desk.png",
-          "largeVertical": "yes",
-          "largeHorizontal": "no",
-          "horizontal": "no"
-        },
-        {
-          "type": "picture",
-          "srcMob": "/hero/pictures/pic_2_mob.png",
-          "alt": "Website example",
-          "width": "171",
-          "height": "96",
-          "srcTab": "/hero/pictures/pic_2_tab.png",
-          "srcDesk": "/hero/pictures/pic_2_desk.png",
-          "largeVertical": "no",
-          "largeHorizontal": "no",
-          "horizontal": "yes"
-        },
-        {
-          "type": "icon",
-          "path": "/hero/icons/icon_1.svg",
-          "width_mob": "20",
-          "height_mob": "20",
-          "width_tab": "32",
-          "height_tab": "32",
-          "width_desk": "32",
-          "height_desk": "32",
-          "smallTop": "yes",
-          "smallBottom": "no"
-        },
-        {
-          "type": "icon",
-          "path": "/hero/icons/icon_2.svg",
-          "width_mob": "20",
-          "height_mob": "20",
-          "width_tab": "32",
-          "height_tab": "32",
-          "width_desk": "32",
-          "height_desk": "32",
-          "smallTop": "no",
-          "smallBottom": "yes"
-        }
-      ]
+      "ornaments": {
+        "srcMob": "/hero/ornaments/ornaments_mob.png",
+        "alt": "Website example",
+        "width": "386",
+        "height": "276",
+        "srcTab": "/hero/ornaments/ornaments_tab.png",
+        "srcDesk": "/hero/ornaments/ornaments_desk.png",
+        "widthTab": "444",
+        "heightTab": "387",
+        "widthDesk": "624",
+        "heightDesk": "544"
+      }
     },
     "services_section": {
       "heading": "Everything You Need for Digital Design",

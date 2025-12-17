@@ -31,7 +31,23 @@
 		</div>
 
 		<div class="hero-section__illustration">
-			{% include '/picture-grid.twig' with {picture_grid_list:index.hero_section.illustrations} %}
+
+		{{ picture(
+			"hero-section__img",
+			index.hero_section.ornaments.srcMob,
+			index.hero_section.ornaments.alt,
+			index.hero_section.ornaments.width,
+			index.hero_section.ornaments.height,
+			"center",
+			"cover",
+			index.hero_section.ornaments.srcTab,
+			index.hero_section.ornaments.srcDesk,
+			index.hero_section.ornaments.widthTab,
+			index.hero_section.ornaments.heightTab,
+			index.hero_section.ornaments.widthDesk,
+			index.hero_section.ornaments.heightDesk
+		) }}
+
 		</div>
 
 	</div>
