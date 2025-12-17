@@ -6,7 +6,15 @@
     & .content-wrapper {
         display: flex;
         flex-direction: column;
-        gap: $space-xxxl;
+        gap: $space-xl;
+
+        @include tab {
+            gap: $space-xxxxl-plus;
+        }
+
+        @include desk {
+            gap: $space-xxxl;
+        }
     }
 
     &__header {
@@ -29,9 +37,5 @@
             grid-template-columns: repeat(3, 1fr);
             justify-content: center;
         }
-    }
-
-    &__item .plan-card {
-        height: 100%;
     }
 }

@@ -5,6 +5,7 @@
     "page_header": {
       "has_background": "yes",
       "two_column": "no",
+      "mob_small": "yes",
       "heading": [
         {
           "text": "Explore Top <br />"
@@ -81,6 +82,13 @@
                 "name": "others",
                 "label": "Others",
                 "value": "others"
+              },
+              {
+                "type": "checkbox",
+                "id": "others2",
+                "name": "others2",
+                "label": "Others",
+                "value": "others2"
               }
             ]
           },
@@ -215,16 +223,7 @@
           "text": "UI Kit"
         },
         {
-          "text": "Social Media"
-        },
-        {
-          "text": "Presentations"
-        },
-        {
-          "text": "Fonts"
-        },
-        {
-          "text": "Illustrations"
+          "text": "UI Kit"
         }
       ],
       "results_counter": {

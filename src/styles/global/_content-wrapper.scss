@@ -32,11 +32,12 @@
 .content-wrapper--contactpage {
     display: flex;
     flex-direction: column;
-    gap: $space-l-plus;
-
+    gap: $space-m;
+    
     @include tab {
         flex-direction: row;
         align-items: flex-end;
+        gap: $space-l-plus;
 
         & > div {
             flex: 0 0 calc((100% - $space-l-plus) / 2);

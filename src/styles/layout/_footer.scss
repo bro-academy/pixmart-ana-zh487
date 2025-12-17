@@ -9,12 +9,13 @@
     margin-block-start: $section-space-mob;
 
     @include tab {
-        gap: $space-xxl-minus;
-        margin-block-start: $section-space-tab;
+        gap: $space-xxl;
+        margin-block-start: $section-space-tab-plus;
     }
 
     @include desk {
-        gap: $space-xxl-plus;
+        gap: $space-l-plus;
+        margin-block-start: $section-space-tab;
     }
 
     &__top {
@@ -23,18 +24,24 @@
         & .content-wrapper {
             display: flex;
             flex-direction: column;
-            gap: $space-xxl-plus;
+            gap: $space-xxl;
+            padding-block: $space-l-plus;
 
-            padding-block: $space-l-minus;
 
             @include tab {
-                padding-block-start: $space-xxl;
                 padding-block-end: $space-l-minus;
+                gap: $space-xxl-plus;
+            }
+
+            @include desk {
+                padding-block: $space-xxl;
+                padding-block-end: $space-m;
+                gap: $space-xxl-minus;
             }
         }
     }
 
-    &__top-item {
+    &__top-item-top {
         display: flex;
         flex-direction: column;
         gap: $space-l-minus;
@@ -45,10 +52,28 @@
         }
     }
 
+    &__top-item-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: $space-l-plus;
+
+        @include tab {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include desk {
+            padding-block: $space-xxs-plus;
+        }
+    }
+
     &__brand {
         display: flex;
         flex-direction: column;
-        max-width: $footer-brand-info-width;
+
+        @include tab {
+            max-width: $footer-brand-info-width;
+        }
     }
 
     &__logo {
@@ -117,6 +142,11 @@
         gap: $space-xs-minus;
     }
 
+    &__subscribe-button {
+        padding-block: $space-m-minus;
+        padding-inline: $space-l-plus;
+    }
+
     &__bottom {
         background-color: $color-bg-base-invert;
 
@@ -142,6 +172,7 @@
         display: flex;
         align-items: center;
         gap: $space-xs-minus;
+        flex-wrap: wrap;
     }
 
     &__bottom-nav-link {

@@ -12,12 +12,13 @@
 
     &__button {
         margin-block-end: $space-l-minus;
+        padding: $space-m-minus;
     }
 
     &__details-list {
         display: flex;
         flex-direction: column;
-        row-gap: $space-xs-minus;
+        row-gap: $space-xs-plus;
         margin-block-end: $space-xl;
     }
 

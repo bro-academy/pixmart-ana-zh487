@@ -9,6 +9,11 @@
 
 	<form action="/" method="post" class="filter-form">
 
+		<button type="reset" class="button filter-form__button">
+			{{ icon ("button__icon", "close", 24, 24) }}
+			{{ products.sidebar.filter.button_reset.text }}
+		</button>
+
 		{% for item in products.sidebar.filter.fieldsets %}
 			<div class="filter-form__fieldset">
 				<h3 class="filter-form__fieldset-heading heading-s">{{ item.heading }}</h3>
@@ -19,11 +24,6 @@
 				</div>
 			</div>
 		{% endfor %}
-
-		<button type="reset" class="button filter-form__button">
-			{{ icon ("button__icon", "close", 24, 24) }}
-			{{ products.sidebar.filter.button_reset.text }}
-		</button>
 
 	</form>
 

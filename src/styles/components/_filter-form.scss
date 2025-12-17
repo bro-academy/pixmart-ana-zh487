@@ -24,4 +24,11 @@
         flex-direction: column;
         gap: $space-xs-plus;
     }
+
+    &__button {
+
+        @include desk {
+            order: 1;
+        }
+    }
 }

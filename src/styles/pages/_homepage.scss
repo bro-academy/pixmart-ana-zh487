@@ -11,4 +11,27 @@
     @include tab {
         row-gap: $section-space-tab;
     }
+
+    & .services-section {
+
+        @include tab {
+            margin-block-start: -$space-xxl;
+        }
+
+        @include desk {
+            margin-block-start: 0;
+        }
+    }
+
+    & .faq-section {
+
+        @include tab {
+            margin-block-start: -$space-l-minus;
+        }
+
+        @include desk {
+            margin-block-start: 0;
+        }
+
+    }
 }

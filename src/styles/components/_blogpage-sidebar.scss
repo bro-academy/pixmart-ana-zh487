@@ -40,10 +40,9 @@
     &__categories-list {
         list-style: disc;
         margin-inline-start: $space-s;
-    }
-
-    &__categories-item {
-        margin-block: $space-xs-minus;
+        display: flex;
+        flex-direction: column;
+        gap: $space-xs-minus;
     }
 
     &__categories-item::marker {
