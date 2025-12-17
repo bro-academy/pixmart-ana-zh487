@@ -5,6 +5,7 @@
     "page_header": {
       "has_background": "no",
       "two_column": "no",
+      "mob_small": "yes",
       "subheading": {
         "text": "Typography",
         "is__accent": "yes"
@@ -24,7 +25,11 @@
       "width": "408",
       "height": "127",
       "srcTab": "/blog/presentation_tab.jpg",
-      "srcDesk": "/blog/presentation_desk.jpg"
+      "srcDesk": "/blog/presentation_desk.jpg",
+      "widthTab": "944",
+      "heightTab": "294",
+      "widthDesk": "1280",
+      "heightDesk": "398"
     },
     "sidebar": {
       "heading": "Blog Overview",
@@ -110,6 +115,10 @@
         "alt": "Example of font usage in typography",
         "srcTab": "/blog/typography_example_tab.jpg",
         "srcDesk": "/blog/typography_example_desk.jpg",
+        "widthTab": "644",
+        "heightTab": "504",
+        "widthDesk": "980",
+        "heightDesk": "462",
         "caption_text": "Example of font usage in typography.",
         "caption_link": "#",
         "caption_link_text": "Get this asset"

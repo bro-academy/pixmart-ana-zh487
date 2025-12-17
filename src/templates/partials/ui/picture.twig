@@ -7,20 +7,24 @@
     position='center',
     fit='cover',
     srcTablet='',
-    srcDesktop=''
+    srcDesktop='',
+    widthTablet='auto',
+    heightTablet='auto',
+    widthDesktop='auto',
+    heightDesktop='auto'
 ) %}
   <picture class="{{ classes }}-wrapper">
     {# Desktop #}
     {% if srcDesktop %}
-      <source media="(min-width: 1440px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcDesktop }}?format=webp" type="image/webp">
-      <source media="(min-width: 1440px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcDesktop }}?format=avif" type="image/avif">
-      <source media="(min-width: 1440px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcDesktop }}">
+      <source media="(min-width: 1440px)" width="{{ widthDesktop }}" height="{{ heightDesktop }}" srcset="/src/assets/images/{{ srcDesktop }}?format=webp" type="image/webp">
+      <source media="(min-width: 1440px)" width="{{ widthDesktop }}" height="{{ heightDesktop }}" srcset="/src/assets/images/{{ srcDesktop }}?format=avif" type="image/avif">
+      <source media="(min-width: 1440px)" width="{{ widthDesktop }}" height="{{ heightDesktop }}" srcset="/src/assets/images/{{ srcDesktop }}">
     {% endif %}
     {# Tablet #}
     {% if srcTablet %}
-      <source media="(min-width: 1024px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcTablet }}?format=webp" type="image/webp">
-      <source media="(min-width: 1024px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcTablet }}?format=avif" type="image/avif">
-      <source media="(min-width: 1024px)" width="{{ width }}" height="{{ height }}" srcset="/src/assets/images/{{ srcTablet }}">
+      <source media="(min-width: 1024px)" width="{{ widthTablet }}" height="{{ heightTablet }}" srcset="/src/assets/images/{{ srcTablet }}?format=webp" type="image/webp">
+      <source media="(min-width: 1024px)" width="{{ widthTablet }}" height="{{ heightTablet }}" srcset="/src/assets/images/{{ srcTablet }}?format=avif" type="image/avif">
+      <source media="(min-width: 1024px)" width="{{ widthTablet }}" height="{{ heightTablet }}" srcset="/src/assets/images/{{ srcTablet }}">
     {% endif %}
     {# Default (mobile) #}
     <source srcset="/src/assets/images/{{ src }}?format=webp" width="{{ width }}" height="{{ height }}" type="image/webp">
