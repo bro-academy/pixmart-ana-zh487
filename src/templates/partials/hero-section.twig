@@ -1,0 +1,55 @@
+{% from 'ui/icon.twig' import icon %}
+{% from 'ui/picture.twig' import picture %}
+
+<section class="hero-section">
+
+	<div class="content-wrapper">
+
+		<div class="hero-section__body">
+			<header class="hero-section__header">
+				<h1 class="hero-section__heading heading-xl">
+					{% for item in index.hero_section.heading %}
+						{% if item.is_highlighted == "yes" %}
+							<span class="highlighted">{{ item.text }}</span>
+						{% else %}
+							{{ item.text }}
+						{% endif %}
+					{% endfor %}
+				</h1>
+			</header>
+			<p class="hero-section__description">{{ index.hero_section.description }}</p>
+			<div class="hero-section__buttons">
+				{% for item in index.hero_section.buttons %}
+					<button type="button" class="hero-section__button button button--large{% if item.is_accent == "yes" %} button--accent{% endif %}{% if item.is_alternative == "yes" %} button--alternative{% endif %}">
+						{% if item.icon %}
+							{{ icon ("hero-section__button-icon button__icon", item.icon, 20, 20) }}
+						{% endif %}
+						{{ item.text }}
+					</button>
+				{% endfor %}
+			</div>
+		</div>
+
+		<div class="hero-section__illustration">
+
+		{{ picture(
+			"hero-section__img",
+			index.hero_section.ornaments.srcMob,
+			index.hero_section.ornaments.alt,
+			index.hero_section.ornaments.width,
+			index.hero_section.ornaments.height,
+			"center",
+			"cover",
+			index.hero_section.ornaments.srcTab,
+			index.hero_section.ornaments.srcDesk,
+			index.hero_section.ornaments.widthTab,
+			index.hero_section.ornaments.heightTab,
+			index.hero_section.ornaments.widthDesk,
+			index.hero_section.ornaments.heightDesk
+		) }}
+
+		</div>
+
+	</div>
+
+</section>

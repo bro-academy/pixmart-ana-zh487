@@ -1,0 +1,121 @@
+{
+  "contacts": {
+    "title": "Get Support & Ask Questions | Pixmart",
+    "description": "Reach out to Pixmart for support, partnership inquiries, or general questions. We’re here to help with anything related to digital assets, design products, and services.",
+    "page_header": {
+      "has_background": "no",
+      "two_column": "yes",
+      "subheading": {
+        "text": "Contact",
+        "is__accent": "no"
+      },
+      "heading": [
+        {
+          "text": "Get in Touch <br />with Us"
+        }
+      ]
+    },
+    "info": {
+      "heading": "Contact Information",
+      "description": "We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.",
+      "button_text": "Shop Now",
+      "details": [
+        {
+          "icon": "phone",
+          "type": "phone",
+          "content": "+1 (555) 123-4567"
+        },
+        {
+          "icon": "mail",
+          "type": "email",
+          "content": "support@pixmart.com"
+        },
+        {
+          "icon": "clock",
+          "content": "Monday to Friday : 9 AM - 5 PM EST"
+        }
+      ],
+      "map": {
+        "caption": {
+          "icon": "map",
+          "name": "PixMart HQ",
+          "address": "123 Creative Ave, Design City, 45678"
+        }
+      }
+    },
+    "form": {
+      "heading": "Send Us a Message",
+      "fields": [
+        {
+          "type": "text",
+          "id": "full_name",
+          "name": "full_name",
+          "label": "Full Name",
+          "placeholder": "Amelia Robert Johnson",
+          "required": "yes",
+          "pattern": "^[A-Za-z]+(?: [A-Za-z]+)*$",
+          "large": "yes"
+        },
+        {
+          "type": "email",
+          "id": "email",
+          "name": "email",
+          "label": "Email Address",
+          "placeholder": "amelia.robertjohnson@pixmart.com",
+          "required": "yes",
+          "pattern": "",
+          "large": "yes"
+        },
+        {
+          "type": "text",
+          "label": "Subject",
+          "name": "subject",
+          "id": "subject",
+          "placeholder": "General Inquiry",
+          "large": "yes",
+          "datalist": [
+            {
+              "text": "General Inquiry"
+            },
+            {
+              "text": "Partnership Inquiry"
+            },
+            {
+              "text": "Support Request"
+            },
+            {
+              "text": "Quick Question"
+            }
+          ]
+        },
+        {
+          "type": "textarea",
+          "id": "message",
+          "name": "message",
+          "label": "Message",
+          "placeholder": "Enter your message ...",
+          "required": "yes",
+          "maxlength": "1000"
+        }
+      ],
+      "consents": [
+        {
+          "type": "checkbox",
+          "id": "subscribe",
+          "name": "subscribe",
+          "label": "Subscribe me to Newsletter",
+          "value": "subscribe"
+        },
+        {
+          "type": "checkbox",
+          "id": "privacy_policy",
+          "name": "privacy_policy",
+          "label": "I have read the User & Privacy Policy",
+          "required": "yes",
+          "checked": "yes"
+        }
+      ],
+      "submit_button_text": "Send Message"
+    }
+  }
+}

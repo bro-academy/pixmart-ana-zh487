@@ -1,0 +1,15 @@
+<section class="pricing-section">
+	<div class="content-wrapper">
+		<header class="pricing-section__header">
+			<span class="pricing-section__subheading subheading">{{ index.pricing.subheading }}</span>
+			<h2 class="pricing-section__heading heading-l">{{ index.pricing.heading }}</h2>
+		</header>
+		<ul class="pricing-section__list">
+			{% for item in index.pricing.list %}
+				<li class="pricing-section__item">
+					{% include '/plan-card.twig' %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

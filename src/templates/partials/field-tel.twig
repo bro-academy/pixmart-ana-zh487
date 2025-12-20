@@ -1,0 +1,19 @@
+<div class="{{ form_class }}__field field-tel">
+	{% if field.label %}
+    <label 
+        for="{{ field.id }}" 
+        class="label-default"
+    >
+		{{ field.label }}
+	</label>
+    {% endif %}
+	<input 
+        type="tel" 
+        id="{{ field.id }}" 
+        name="{{ field.name }}" 
+        placeholder="{{ field.placeholder }}" 
+        class="field-tel__input input-default {% if field.large == "yes" %} input-default--large {% endif %}" 
+        {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %} 
+        {% if field.required == "yes" %} required {% endif %}
+    />
+</div>

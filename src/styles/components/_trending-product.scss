@@ -1,0 +1,101 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.trending-product {
+
+    display: flex;
+    flex-direction: column;
+    gap: $space-s;
+
+    max-width: $trending-product-width;
+
+    &__illustration {
+        position: relative;
+        border-radius: $border-radius-xl;
+    }
+
+    &__img {
+        border-radius: $border-radius-xl;
+        display: block;
+    }
+
+    &__label {
+        color: $color-text-icon-primary-invert;
+        background-color: $color-accent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: $space-s;
+        border-radius: 0 $border-radius-xl 0 $border-radius-xl;
+    }
+
+    &__label-icon {
+        fill: currentColor;
+        display: block;
+    }
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        background-color: $color-text-icon-tertiary-invert;
+        border-radius: $border-radius-xl;
+        padding: $space-s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+
+        @include transition(opacity);
+
+        @include hover {
+            opacity: 1;
+        }
+    }
+
+    &__overlay-button {
+        width: 100%;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: $space-xxs;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $space-xs-minus;
+        flex-wrap: wrap;
+    }
+
+    &__price {
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+        color: $color-accent;
+        font-weight: $fw-s;
+    }
+
+    &__tags {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $space-xxs;
+    }
+
+    &__tag {
+        color: $color-text-icon-tertiary;
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+
+        @include transition((color));
+
+        &:not(:last-child)::after {
+            content: '\2022';
+            margin-inline-start: $space-xxs;
+        }
+    }
+
+}

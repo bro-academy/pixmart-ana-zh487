@@ -1,0 +1,22 @@
+{% set pageClass= "blogpage" %}
+
+{% extends 'src/templates/layouts/base.twig' %}
+
+{% block title %}
+<title>{{ blog.title }}</title>
+<meta name="description" content="{{ blog.description }}">
+{% endblock %}
+
+{% block content %}
+
+	{% include 'src/templates/partials/page-header.twig' with {item:blog.page_header} %}
+
+	<div class="content-wrapper content-wrapper--blogpage">
+
+		{% include 'src/templates/partials/featured-picture.twig' with {item:blog.featured_picture} %}
+
+		{% include 'src/templates/partials/blogpage-content.twig' %}
+
+	</div>
+
+{% endblock %}

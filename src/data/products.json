@@ -1,0 +1,513 @@
+{
+  "products": {
+    "title": "UI Kits Collection | Pixmart",
+    "description": "Find the best UI Kits for Figma and other design tools. Explore digital assets for technology, e-commerce, travel, healthcare, and more. Popular, new, and premium-quality resources available for instant download.",
+    "page_header": {
+      "has_background": "yes",
+      "two_column": "no",
+      "mob_small": "yes",
+      "heading": [
+        {
+          "text": "Explore Top <br />"
+        },
+        {
+          "text": "UI Kits",
+          "is_highlighted": "yes"
+        },
+        {
+          "text": "Design Assets"
+        }
+      ]
+    },
+    "sidebar": {
+      "filter": {
+        "heading": "FIlters",
+        "fieldsets": [
+          {
+            "heading": "Categories",
+            "fields": [
+              {
+                "type": "checkbox",
+                "id": "all_categories",
+                "name": "all_categories",
+                "label": "All Categories",
+                "value": "all_categories",
+                "checked": "yes"
+              },
+              {
+                "type": "checkbox",
+                "id": "technology",
+                "name": "technology",
+                "label": "Technology",
+                "value": "technology"
+              },
+              {
+                "type": "checkbox",
+                "id": "travel_tourism",
+                "name": "travel_tourism",
+                "label": "Travel & Tourism",
+                "value": "travel_tourism"
+              },
+              {
+                "type": "checkbox",
+                "id": "health_fitness",
+                "name": "health_fitness",
+                "label": "Health & Fitness",
+                "value": "health_fitness"
+              },
+              {
+                "type": "checkbox",
+                "id": "ecommerce",
+                "name": "ecommerce",
+                "label": "E-Commerce",
+                "value": "ecommerce"
+              },
+              {
+                "type": "checkbox",
+                "id": "education",
+                "name": "education",
+                "label": "Education",
+                "value": "education"
+              },
+              {
+                "type": "checkbox",
+                "id": "entertainment",
+                "name": "entertainment",
+                "label": "Entertainment",
+                "value": "entertainment"
+              },
+              {
+                "type": "checkbox",
+                "id": "others",
+                "name": "others",
+                "label": "Others",
+                "value": "others"
+              },
+              {
+                "type": "checkbox",
+                "id": "others2",
+                "name": "others2",
+                "label": "Others",
+                "value": "others2"
+              }
+            ]
+          },
+          {
+            "heading": "Format Type",
+            "fields": [
+              {
+                "type": "radio",
+                "id": "figma",
+                "name": "format",
+                "label": "Figma",
+                "value": "figma",
+                "checked": "yes",
+                "required": "yes"
+              },
+              {
+                "type": "radio",
+                "id": "sketch",
+                "name": "format",
+                "label": "Sketch",
+                "value": "sketch"
+              },
+              {
+                "type": "radio",
+                "id": "adobe_xd",
+                "name": "format",
+                "label": "Adobe XD",
+                "value": "adobe_xd"
+              },
+              {
+                "type": "radio",
+                "id": "adobe_photoshop",
+                "name": "format",
+                "label": "Adobe Photoshop",
+                "value": "adobe_photoshop"
+              },
+              {
+                "type": "radio",
+                "id": "adobe_illustration",
+                "name": "format",
+                "label": "Adobe Illustration",
+                "value": "adobe_illustration"
+              }
+            ]
+          },
+          {
+            "heading": "Style",
+            "fields": [
+              {
+                "type": "checkbox",
+                "switcher": "yes",
+                "id": "minimalist",
+                "name": "minimalist",
+                "label": "Minimalist",
+                "value": "minimalist",
+                "checked": "yes"
+              },
+              {
+                "type": "checkbox",
+                "switcher": "yes",
+                "id": "modern",
+                "name": "modern",
+                "label": "Modern",
+                "value": "modern",
+                "checked": "yes"
+              },
+              {
+                "type": "checkbox",
+                "switcher": "yes",
+                "id": "playful",
+                "name": "playful",
+                "label": "Playful",
+                "value": "playful",
+                "checked": "yes"
+              },
+              {
+                "type": "checkbox",
+                "switcher": "yes",
+                "id": "dark_mode",
+                "name": "dark_mode",
+                "label": "Dark Mode",
+                "value": "dark_mode",
+                "checked": "yes"
+              },
+              {
+                "type": "checkbox",
+                "switcher": "yes",
+                "id": "photocentric",
+                "name": "photocentric",
+                "label": "Photocentric",
+                "value": "photocentric",
+                "checked": "yes"
+              }
+            ]
+          }
+        ],
+        "button_reset": {
+          "icon": "close",
+          "text": "Clear all filters"
+        },
+        "button_save": {
+          "text": "Save"
+        }
+      }
+    },
+    "list_header": {
+      "heading": "Design Assets Catalog",
+      "select": {
+        "name": "type",
+        "id": "type",
+        "options": [
+          {
+            "value": "bestseller",
+            "text": "Best Seller"
+          },
+          {
+            "value": "new",
+            "text": "New"
+          },
+          {
+            "value": "popular",
+            "text": "Popular"
+          },
+          {
+            "value": "soldout",
+            "text": "Sold Out"
+          }
+        ]
+      },
+      "tags": [
+        {
+          "text": "UI Kit"
+        },
+        {
+          "text": "UI Kit"
+        }
+      ],
+      "results_counter": {
+        "text_1": "Showing",
+        "showing_amount": "12",
+        "text_2": "out of",
+        "all_amount": "120",
+        "text_3": "results."
+      },
+      "view_mode": [
+        {
+          "icon": "grid"
+        },
+        {
+          "icon": "list"
+        }
+      ]
+    },
+    "list": [
+      {
+        "label": "Sold out",
+        "link": "#",
+        "picture": {
+          "srcMob": "/products/lens_chronicles_mob.jpg",
+          "alt": "Lens Chronicles",
+          "width": "408",
+          "height": "260",
+          "srcTab": "/products/lens_chronicles_tab.jpg",
+          "srcDesk": "/products/lens_chronicles_desk.jpg"
+        },
+        "name": "Lens Chronicles",
+        "price": "€20.99",
+        "tags": [
+          {
+            "tag": "Photography"
+          },
+          {
+            "tag": "Creative"
+          }
+        ]
+      },
+      {
+        "label": "New",
+        "link": "#",
+        "picture": {
+          "srcMob": "/products/career_success_mob.jpg",
+          "alt": "Career Success",
+          "width": "408",
+          "height": "260",
+          "srcTab": "/products/career_success_tab.jpg",
+          "srcDesk": "/products/career_success_desk.jpg"
+        },
+        "name": "Career Success",
+        "price": "€20.99",
+        "tags": [
+          {
+            "tag": "Guidance"
+          },
+          {
+            "tag": "Jobs"
+          }
+        ]
+      },
+      {
+        "label": "Popular",
+        "link": "#",
+        "picture": {
+          "srcMob": "/products/dream_homes_mob.jpg",
+          "alt": "Dream Homes",
+          "width": "408",
+          "height": "260",
+          "srcTab": "/products/dream_homes_tab.jpg",
+          "srcDesk": "/products/dream_homes_desk.jpg"
+        },
+        "name": "Dream Homes",
+        "price": "€45.99",
+        "tags": [
+          {
+            "tag": "Real Estate"
+          },
+          {
+            "tag": "Modern"
+          }
+        ]
+      },
+      {
+        "label": "Popular",
+        "link": "#",
+        "picture": {
+          "srcMob": "/products/foodish_catering_mob.jpg",
+          "alt": "Foodish Catering",
+          "width": "408",
+          "height": "260",
+          "srcTab": "/products/foodish_catering_tab.jpg",
+          "srcDesk": "/products/foodish_catering_desk.jpg"
+        },
+        "name": "Foodish Catering",
+        "price": "€15.99",
+        "tags": [
+          {
+            "tag": "Food"
+          },
+          {
+            "tag": "Events"
+          }
+        ]
+      },
+      {
+        "label": "New",
+        "link": "#",
+        "picture": {
+          "srcMob": "/products/caring_hearts_mob.jpg",
+          "alt": "Caring Hearts",
+          "width": "408",
+          "height": "260",
+          "srcTab": "/products/caring_hearts_tab.jpg",
+          "srcDesk": "/products/caring_hearts_desk.jpg"
+        },
+        "name": "Caring Hearts",
+        "price": "€19.99",
+        "tags": [
+          {
+            "tag": "Healthcare"
+          },
+          {
+            "tag": "Support"
+          }
+        ]
+      },
+      {
+        "label": "Sold out",
+        "link": "#",
+        "picture": {
+          "srcMob": "/products/gaming_rise_mob.jpg",
+          "alt": "Gaming Rise",
+          "width": "408",
+          "height": "260",
+          "srcTab": "/products/gaming_rise_tab.jpg",
+          "srcDesk": "/products/gaming_rise_desk.jpg"
+        },
+        "name": "Gaming Rise",
+        "price": "€19.99",
+        "tags": [
+          {
+            "tag": "eSports"
+          },
+          {
+            "tag": "Trends"
+          }
+        ]
+      },
+      {
+        "label": "Sold out",
+        "link": "#",
+        "picture": {
+          "srcMob": "/products/edit_pro_mob.jpg",
+          "alt": "Edit Pro",
+          "width": "408",
+          "height": "260",
+          "srcTab": "/products/edit_pro_tab.jpg",
+          "srcDsk": "/products/edit_pro_desk.jpg"
+        },
+        "name": "Edit Pro",
+        "price": "€25.99",
+        "tags": [
+          {
+            "tag": "Design"
+          },
+          {
+            "tag": "Tools"
+          }
+        ]
+      },
+      {
+        "label": "New",
+        "link": "#",
+        "picture": {
+          "srcMob": "products/banking_redefined_mob.jpg",
+          "alt": "Banking Redefined",
+          "width": "408",
+          "height": "260",
+          "srcTab": "products/banking_redefined_tab.jpg",
+          "srcDesk": "products/banking_redefined_desk.jpg"
+        },
+        "name": "Banking Redefined",
+        "price": "€25.99",
+        "tags": [
+          {
+            "tag": "Finance"
+          },
+          {
+            "tag": "Secure"
+          }
+        ]
+      },
+      {
+        "label": "Popular",
+        "link": "#",
+        "picture": {
+          "srcMob": "/products/exploring_fun_mob.jpg",
+          "alt": "Exploring Fun",
+          "width": "408",
+          "height": "260",
+          "srcTab": "/products/exploring_fun_tab.jpg",
+          "srcDesk": "/products/exploring_fun_desk.jpg"
+        },
+        "name": "Exploring Fun",
+        "price": "€41.99",
+        "tags": [
+          {
+            "tag": "Travel"
+          },
+          {
+            "tag": "Adventure"
+          }
+        ]
+      },
+      {
+        "label": "Popular",
+        "link": "#",
+        "picture": {
+          "srcMob": "/products/admin_dashboard_mob.jpg",
+          "alt": "Admin Dashboard",
+          "width": "408",
+          "height": "260",
+          "srcTab": "/products/admin_dashboard_tab.jpg",
+          "srcDesk": "/products/admin_dashboard_desk.jpg"
+        },
+        "name": "Admin Dashboard",
+        "price": "€15.99",
+        "tags": [
+          {
+            "tag": "Data"
+          },
+          {
+            "tag": "Tools"
+          }
+        ]
+      },
+      {
+        "label": "New",
+        "link": "#",
+        "picture": {
+          "srcMob": "/products/analytical_dashboard_mob.jpg",
+          "alt": "Analytical Dashboard",
+          "width": "408",
+          "height": "260",
+          "srcTab": "/products/analytical_dashboard_tab.jpg",
+          "srcDesk": "/products/analytical_dashboard_desk.jpg"
+        },
+        "name": "Analytical Dashboard",
+        "price": "€10.99",
+        "tags": [
+          {
+            "tag": "Data"
+          },
+          {
+            "tag": "Tools"
+          }
+        ]
+      },
+      {
+        "label": "Sold out",
+        "link": "#",
+        "picture": {
+          "srcMob": "/products/kindergarten_mob.jpg",
+          "alt": "Kindergarten",
+          "width": "408",
+          "height": "260",
+          "srcTab": "/products/kindergarten_tab.jpg",
+          "srcDesk": "/products/kindergarten_desk.jpg"
+        },
+        "name": "Kindergarten",
+        "price": "€15.99",
+        "tags": [
+          {
+            "tag": "Education"
+          },
+          {
+            "tag": "Kids"
+          }
+        ]
+      }
+    ],
+    "button_text": "Load more"
+  }
+}

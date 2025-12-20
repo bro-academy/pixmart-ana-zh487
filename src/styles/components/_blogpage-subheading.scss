@@ -1,0 +1,7 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.blogpage-subheading {
+    font-size: $fs-title-s;
+    line-height: $lh-title-s;
+}

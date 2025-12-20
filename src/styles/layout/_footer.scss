@@ -1,0 +1,201 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    gap: $space-l-minus;
+    margin-block-start: $section-space-mob;
+
+    @include tab {
+        gap: $space-xxl;
+        margin-block-start: $section-space-tab-plus;
+    }
+
+    @include desk {
+        gap: $space-l-plus;
+        margin-block-start: $section-space-tab;
+    }
+
+    &__top {
+        background-color: $color-bg-base;
+
+        & .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: $space-xxl;
+            padding-block: $space-l-plus;
+
+
+            @include tab {
+                padding-block-end: $space-l-minus;
+                gap: $space-xxl-plus;
+            }
+
+            @include desk {
+                padding-block: $space-xxl;
+                padding-block-end: $space-m;
+                gap: $space-xxl-minus;
+            }
+        }
+    }
+
+    &__top-item-top {
+        display: flex;
+        flex-direction: column;
+        gap: $space-l-minus;
+
+        @include tab {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__top-item-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: $space-l-plus;
+
+        @include tab {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include desk {
+            padding-block: $space-xxs-plus;
+        }
+    }
+
+    &__brand {
+        display: flex;
+        flex-direction: column;
+
+        @include tab {
+            max-width: $footer-brand-info-width;
+        }
+    }
+
+    &__logo {
+        margin-block-end: $space-s;
+    }
+
+    &__slogan {
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+        color: $color-text-icon-primary;
+    }
+
+    &__top-nav {
+        display: flex;
+        flex-direction: column;
+        gap: $space-l-minus;
+
+        @include tab {
+            flex-direction: row;
+            gap: $space-xxl;
+        }
+    }
+
+    &__top-nav-menu {
+        max-width: $footer-menu-width;
+    }
+
+    &__top-nav-title {
+        margin-block-end: $space-s;
+    }
+
+    &__top-nav-item:not(:last-child) {
+        margin-block-end: $space-xs-minus;
+    }
+
+    &__top-nav-link {
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+        font-weight: $fw-xs;
+        color: $color-text-icon-secondary;
+    }
+
+    &__socials {
+        display: flex;
+        align-items: flex-start;
+        gap: $space-xs-minus;
+    }
+
+    &__subscribe-form {
+        display: flex;
+        gap: $space-m;
+        flex-wrap: wrap;
+
+        & .field-email {
+            min-width: $subscribe-input-width;
+
+            &__input {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__subscribe-content {
+        display: flex;
+        gap: $space-xs-minus;
+    }
+
+    &__subscribe-button {
+        padding-block: $space-m-minus;
+        padding-inline: $space-l-plus;
+    }
+
+    &__bottom {
+        background-color: $color-bg-base-invert;
+
+        & .content-wrapper {
+            padding-block: $space-m;
+            display: flex;
+            flex-direction: column;
+            gap: $space-l-minus;
+
+            @include tab {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+    &__bottom-nav {
+        flex-shrink: 0;
+    }
+
+    &__bottom-nav-list {
+        display: flex;
+        align-items: center;
+        gap: $space-xs-minus;
+        flex-wrap: wrap;
+    }
+
+    &__bottom-nav-link {
+        color: $color-text-icon-tertiary-invert;
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+        font-weight: $fw-xs;
+
+        &:visited {
+            color: $color-text-icon-tertiary-invert;
+        }
+    }
+
+    &__bottom-nav-item:not(:last-child)::after {
+        content: '|';
+        display: inline-block;
+        color: $color-text-icon-tertiary-invert;
+        margin-inline-start: $space-xxs-plus;
+    }
+
+    &__copyright {
+        color: $color-text-icon-tertiary-invert;
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+    }
+}

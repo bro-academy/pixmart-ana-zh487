@@ -1,0 +1,9 @@
+@use '../base/variables' as *;
+
+.field-textarea {
+
+    &__input {
+        resize: none;
+        padding: $space-m-minus;
+    }
+}

@@ -1,0 +1,33 @@
+@use '../base/variables' as *;
+
+@mixin mob {
+    @media (min-width: $mob-w) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (min-width: $tab-w) {
+        @content;
+    }
+}
+
+@mixin desk {
+    @media (min-width: $desk-w) {
+        @content;
+    }
+}
+
+@mixin hover {
+    @media (hover) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+@mixin transition($properties, $duration: .15s, $speed: ease-in) {
+    transition-property: $properties;
+    transition-duration: $duration;
+    transition-timing-function: $speed;
+}

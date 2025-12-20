@@ -1,0 +1,47 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.service-card {
+
+    &__illustration {
+        background-color: $color-bg-alternative-secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: $space-l;
+        border-radius: $border-radius-xl;
+
+        @include transition((background-color));
+    }
+
+    &__icon {
+        color: $color-accent;
+
+        @include transition((color));
+    }
+
+    &__name {
+        font-size: $fs-title-xs;
+        line-height: $lh-title-xs-plus;
+        font-weight: $fw-s;
+        text-align: center;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        gap: $space-m-minus;
+        color: $color-text-icon-primary;
+    }
+
+    @include hover {
+
+        & .service-card__illustration {
+            background-color: $color-accent;
+        }
+
+        & .service-card__icon {
+            color: $color-bg-base;
+        }
+    }
+}

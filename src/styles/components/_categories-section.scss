@@ -1,0 +1,78 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.categories-section {
+
+    & .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: $space-xxl-minus;
+
+        @include tab {
+            flex-direction: row;
+
+            &>div {
+                flex-basis: 50%;
+            }
+        }
+    }
+
+    &__cards {
+        width: 100%;
+
+        @include tab {
+            order: -1;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(60px, auto) minmax(100px, auto);
+        gap: $space-m-minus;
+
+        &::before {
+            content: '';
+            border-radius: 0 0 $border-radius-xl $border-radius-xl;
+            background: linear-gradient(to top, $color-bg-alternative-secondary, transparent);
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+
+        &::after {
+            content: '';
+            border-radius: $border-radius-xl $border-radius-xl 0 0;
+            background: linear-gradient(to bottom, $color-bg-alternative-secondary, transparent);
+        }
+    }
+
+    &__item {
+        grid-row: span 2;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: $space-s;
+        margin-block-end: $space-l-minus;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        row-gap: $space-s;
+    }
+
+    &__description {
+        font-size: $fs-text-xl;
+        line-height: $lh-text-xl;
+        color: $color-text-icon-secondary;
+    }
+
+    & .category-card {
+        height: 100%;
+    }
+
+}

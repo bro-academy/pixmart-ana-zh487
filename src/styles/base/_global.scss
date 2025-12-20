@@ -1,0 +1,77 @@
+@use '../base/variables' as *;
+
+body {
+    font-family: $ff-primary;
+    background-color: $color-bg-base;
+    color: $color-text-icon-primary;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: $mob-w;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus-visible {
+    outline: none;
+}
+
+*:empty {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+@each $name, $value in $breakpoints {
+    .#{$name}-hid {
+        @media (min-width: $value) {
+            opacity: 0;
+            width: 0;
+            height: 0;
+            position: absolute;
+            overflow: hidden;
+            z-index: -1;
+        }
+    }
+
+    .#{$name}-vis {
+        @media (min-width: $value) {
+            opacity: 1;
+            width: auto;
+            height: auto;
+            position: static;
+            overflow: visible;
+            z-index: 0;
+        }
+    }
+}
+
+@media (max-width: $mob-w) {
+    .mob-hid {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+    }
+}

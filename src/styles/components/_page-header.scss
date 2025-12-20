@@ -1,0 +1,37 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.page-header {
+
+    padding-block: $space-xxl;
+
+    &__subheading {
+        margin-block-end: $space-s;
+        display: inline-block;
+    }
+
+    &__subheading--accent {
+        color: $color-neutral-primary;
+        font-weight: $fw-s;
+        padding-block: $space-xs-minus;
+        padding-inline: $space-s;
+        background-color: $color-accent;
+        border-radius: $border-radius-xl;
+        margin-block-end: $space-m;
+    }
+}
+
+
+.page-header--background {
+    padding-block-end: $space-xxxxl;
+    background: url(/src/assets/images/page-header/bg_wave.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.page-header--two-column {
+    & .content-wrapper {
+        padding-inline: 0;
+    }
+}

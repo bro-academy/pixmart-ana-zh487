@@ -1,0 +1,41 @@
+{% from 'ui/icon.twig' import icon %}
+
+<section class="trending-section splide">
+	<div class="content-wrapper">
+		<header class="trending-section__header">
+			<div class="trending-section__titles">
+				<span class="trending-section__subheading subheading">{{ index.trending.subheading }}</span>
+				<h2 class="trending-section__heading heading-l">{{ index.trending.heading }}</h2>
+			</div>
+			<div class="trending-section__buttons mob-hid tab-vis splide__arrows">
+				<button type="button" class="trending-section__button button button--large button--icon splide__arrow splide__arrow--prev">{{ icon ("trending-section__button-icon button__icon", "left", 24, 24) }}</button>
+				<button type="button" class="trending-section__button button button--large button--icon splide__arrow splide__arrow--next">{{ icon ("trending-section__button-icon button__icon", "right", 24, 24) }}</button>
+			</div>
+		</header>
+		<div class="trending-section__body splide__track">
+			<ul class="trending-section__list splide__list">
+				{% for item in index.trending.list %}
+					<li class="trending-section__item splide__slide">
+						{% include '/trending-product.twig' %}
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+
+<script>
+var splide = new Splide( '.splide', {
+  pagination: false,
+  type     : 'loop',
+  focus    : 'start',
+  gap: '16px',
+  autoWidth: true,
+} );
+
+splide.mount();
+</script>
+
+
+
+
+</section>

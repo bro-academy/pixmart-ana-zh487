@@ -1,0 +1,103 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.blogpage-sidebar {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: $space-l-plus;
+
+    order: -1;
+
+    & > div:not(:last-child) {
+        border-bottom: $border-width-s solid $color-text-icon-primary;
+        padding-block-end: $space-l-plus;
+    }
+
+    @include tab {
+        flex: 0 0 $blogpage-sidebar-width;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: $space-s;
+        flex-wrap: wrap;
+    }
+
+    &__article-date {
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+        color: $color-text-icon-additional;
+    }
+
+    &__categories {
+        display: flex;
+        flex-direction: column;
+        row-gap: $space-m;
+    }
+
+    &__categories-list {
+        list-style: disc;
+        margin-inline-start: $space-s;
+        display: flex;
+        flex-direction: column;
+        gap: $space-xs-minus;
+    }
+
+    &__categories-item::marker {
+        color: $color-accent;
+    }
+
+    &__categories-link {
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+        font-weight: $fw-xs;
+        color: $color-text-icon-secondary;
+    }
+
+    &__categories-link--active {
+        color: $color-text-icon-primary;
+        font-weight: $fw-m;
+    }
+
+    &__latest {
+        display: flex;
+        flex-direction: column;
+        row-gap: $space-m;
+    }
+
+    &__latest-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: $space-m;
+    }
+
+    &__latest-item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: $space-xs-plus;
+    }
+
+    &__latest-item:not(:last-child) {
+        border-bottom: $border-width-xs solid $color-line-secondary;
+        padding-block-end: $space-m;
+    }
+
+    &__latest-date {
+        color: $color-text-icon-secondary;
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+    }
+
+    &__latest-link {
+        font-family: $ff-secondary;
+        font-size: $fs-title-xs;
+        line-height: $lh-title-xs;
+        color: $color-text-icon-primary;
+        font-weight: $fw-l;
+    }
+
+}

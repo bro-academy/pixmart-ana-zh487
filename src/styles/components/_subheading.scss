@@ -1,0 +1,8 @@
+@use '../base/variables' as *;
+
+.subheading {
+    font-size: $fs-text-l;
+    line-height: $lh-text-l;
+    text-transform: uppercase;
+    color: $color-accent;
+}

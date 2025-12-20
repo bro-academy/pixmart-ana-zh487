@@ -1,0 +1,46 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.content-wrapper {
+
+    width: 100%;
+    max-width: $content-width-max;
+    margin-inline: auto;
+    padding-inline: $space-s;
+
+    @include tab {
+        padding-inline: $space-l-plus;
+    }
+
+    @include desk {
+        padding-inline: 0;
+    }
+}
+
+.content-wrapper--products {
+    display: flex;
+    justify-content: space-between;
+    gap: $space-m;
+}
+
+.content-wrapper--blogpage {
+    display: flex;
+    flex-direction: column;
+    gap: $space-xl;
+}
+
+.content-wrapper--contactpage {
+    display: flex;
+    flex-direction: column;
+    gap: $space-m;
+    
+    @include tab {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: $space-l-plus;
+
+        & > div {
+            flex: 0 0 calc((100% - $space-l-plus) / 2);
+        }
+    }
+}

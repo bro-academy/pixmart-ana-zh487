@@ -1,0 +1,173 @@
+{
+  "common": {
+    "siteTitle": "Pixmart",
+    "header": {
+      "navigation": [
+        {
+          "text": "About",
+          "link": "/"
+        },
+        {
+          "text": "Products",
+          "link": "/products"
+        },
+        {
+          "text": "Creators",
+          "link": "/"
+        },
+        {
+          "text": "Blog",
+          "link": "/blog"
+        },
+        {
+          "text": "Contact",
+          "link": "/contacts"
+        }
+      ],
+      "search": {
+        "name": "search_header",
+        "id": "search_header",
+        "placeholder": "Search for Digital Assets"
+      }
+    },
+    "footer": {
+      "slogan": "Your premium digital assets solution with high quality and comprehensive range of products and services.",
+      "navigation": [
+        {
+          "title": "Company",
+          "list": [
+            {
+              "text": "Homepage V1",
+              "link": "/"
+            },
+            {
+              "text": "Homepage V2",
+              "link": "/"
+            },
+            {
+              "text": "Homepage V3",
+              "link": "/"
+            },
+            {
+              "text": "About Us",
+              "link": "/"
+            },
+            {
+              "text": "About Us",
+              "link": "/"
+            },
+            {
+              "text": "Blog Articles",
+              "link": "/blog"
+            }
+          ]
+        },
+        {
+          "title": "Products",
+          "list": [
+            {
+              "text": "Website",
+              "link": "/products"
+            },
+            {
+              "text": "Mobile App",
+              "link": "/products"
+            },
+            {
+              "text": "Social Media Feeds",
+              "link": "/products"
+            },
+            {
+              "text": "Presentation",
+              "link": "/products"
+            },
+            {
+              "text": "Product Mockups",
+              "link": "/products"
+            },
+            {
+              "text": "Illustrations",
+              "link": "/products"
+            }
+          ]
+        },
+        {
+          "title": "Account",
+          "list": [
+            {
+              "text": "Your Cart",
+              "link": "/"
+            },
+            {
+              "text": "Check Out",
+              "link": "/"
+            },
+            {
+              "text": "Refund Policy",
+              "link": "/"
+            },
+            {
+              "text": "Company Policy",
+              "link": "/"
+            },
+            {
+              "text": "Send A Message",
+              "link": "/contacts"
+            },
+            {
+              "text": "Customer Support",
+              "link": "/"
+            }
+          ]
+        }
+      ],
+      "socials": [
+        {
+          "icon": "twitter",
+          "link": "twitter.com"
+        },
+        {
+          "icon": "facebook",
+          "link": "facebook.com"
+        },
+        {
+          "icon": "telegram",
+          "link": "telegram.com"
+        }
+      ],
+      "subscribe": {
+        "title": "Subscribe to <br>Design Newsletter",
+        "form": {
+          "fields_list": [
+            {
+              "type": "email",
+              "id": "subscribe-email",
+              "name": "subscribe-email",
+              "placeholder": "Enter your email address...",
+              "required": "yes",
+              "large": "yes"
+            }
+          ],
+          "button_text": "Subscribe"
+        }
+      },
+      "legal": {
+        "navigation": [
+          {
+            "text": "Privacy Policy",
+            "link": "/"
+          },
+          {
+            "text": "Terms and Condition",
+            "link": "/"
+          },
+          {
+            "text": "Site Map",
+            "link": "/"
+          }
+        ],
+        "copyright_text": "Copyright © 2024 Pixmart. All rights reserved."
+      }
+    }
+  }
+}

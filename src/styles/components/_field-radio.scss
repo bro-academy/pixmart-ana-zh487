@@ -1,0 +1,80 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.field-radio {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: $space-xxs;
+
+    &__label {
+        cursor: pointer;
+    }
+
+    &__input {
+        cursor: pointer;
+        appearance: none;
+        width: $radio-size;
+        height: $radio-size;
+        margin: $space-xxs-large;
+        border-radius: $border-radius-m;
+        border-width: $border-width-s;
+        border-style: solid;
+        border-color: $color-line;
+        outline-width: $outline-width-s;
+        outline-style: solid;
+        outline-offset: $outline-width-xs;
+        outline-color: transparent;
+        background-color: $color-bg-base;
+        flex-shrink: 0;
+        align-self: start;
+
+        &:checked {
+            border-width: $border-width-l;
+            border-color: $color-accent;
+        }
+
+        @include transition((background-color, border-color));
+
+        @include hover {
+            background-color: $color-bg-alternative-secondary;
+        }
+
+        &:active {
+            border-width: $border-width-l;
+            border-color: $color-accent;
+        }
+
+        &:focus {
+            border-color: $color-text-icon-tertiary;
+            outline-color: $color-focus;
+
+            &:checked {
+                border-color: $color-focus;
+            }
+        }
+
+        &:disabled {
+            background-color: $color-separator-bold;
+            border-color: transparent;
+
+            &+.label-radio {
+                color: $color-neutral-disabled;
+            }
+
+            &:checked {
+                background-color: $color-text-icon-tertiary;
+                border-width: $border-width-l;
+                border-color: $color-line;
+            }
+        }
+
+        &:user-invalid {
+            border-color: $color-status-negative;
+            outline-color: $color-status-negative;
+        }
+        
+    }
+
+}

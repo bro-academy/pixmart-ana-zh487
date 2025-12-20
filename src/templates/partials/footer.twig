@@ -1,0 +1,62 @@
+{% from 'ui/icon.twig' import icon %}
+
+<footer class="footer">
+	<div class="footer__top">
+		<div class="content-wrapper">
+			<div class="footer__top-item-top">
+				<div class="footer__brand">
+					<a href="/" class="footer__logo">
+						<svg class="footer__logo-icon" width="300" height="50"><use href="/src/assets/logo/logo.svg"/></svg>
+					</a>
+					<p class="footer__slogan">{{ common.footer.slogan }}</p>
+				</div>
+				<nav class="footer__top-nav">
+					{% for menu in common.footer.navigation %}
+						<div class="footer__top-nav-menu">
+							<p class="footer__top-nav-title heading-xs">{{ menu.title }}</p>
+							<ul class="footer__top-nav-list">
+								{% for item in menu.list %}
+									<li class="footer__top-nav-item">
+										<a href="{{ item.link }}" class="footer__top-nav-link link">{{ item.text }}</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+					{% endfor %}
+				</nav>
+			</div>
+			<div class="footer__top-item-bottom">
+				<div class="footer__socials">
+					{% for item in common.footer.socials %}
+						<a href="{{ item.link }}" class="footer__socials-button button button--large button--icon" target="_blank">
+							{{ icon ("footer__socials-button-icon button__icon", item.icon, 24, 24) }}
+						</a>
+					{% endfor %}
+				</div>
+				<form action="/" method="post" class="footer__subscribe-form">
+					<h2 class="footer__subscribe-title heading-s">{{ common.footer.subscribe.title }}</h2>
+					<div class="footer__subscribe-content">
+						{% for field in common.footer.subscribe.form.fields_list %}
+							{% include '/field-list.twig' with {form_class:"footer__subscribe-form"} %}
+						{% endfor %}
+						<button type="submit" class="footer__subscribe-button button button--accent">{{ common.footer.subscribe.form.button_text }}</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="content-wrapper">
+			<nav class="footer__bottom-nav">
+				<ul class="footer__bottom-nav-list">
+					{% for item in common.footer.legal.navigation %}
+						<li class="footer__bottom-nav-item">
+							<a href="{{ item.link }}" class="footer__bottom-nav-link link">{{ item.text }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
+			<p class="footer__copyright">{{ common.footer.legal.copyright_text }}</p>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,72 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.hero-section {
+
+    background: linear-gradient(90deg, #F0F6FD 44%, #FFFFFF 100%);
+
+    & .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: $space-l-minus;
+
+        padding-block: $space-l-minus $space-xxl;
+
+        @include tab {
+            flex-direction: row;
+            align-items: center;
+            padding-block: $space-xxxxxl;
+            gap: $space-xxxl;
+        }
+
+        @include desk {
+            padding-block: $space-xl;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: $space-l-minus;
+        max-width: $hero-body-max-width;
+    }
+
+    &__description {
+        font-size: $fs-title-xs;
+        line-height: $lh-title-xs-plus;
+        font-weight: $fw-s;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-m-minus;
+
+        @include tab {
+            gap: $space-m;
+        }
+        
+    }
+
+    &__button-icon {
+        fill: $color-accent;
+    }
+
+    &__illustration {
+
+        position: relative;
+        order: -1;
+        flex-shrink: 0;
+
+        @include tab {
+            order: 0;
+            right: -$space-xs-plus;
+        }
+
+        @include desk {
+            right: -$space-l-plus;
+        }
+    }
+
+}

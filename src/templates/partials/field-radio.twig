@@ -1,0 +1,19 @@
+<div class="{{ form_class }}__field field-radio {% if field.switcher == "yes" %}field-switcher{% endif %}">
+	<input 
+        type="radio" 
+        id="{{ field.id }}" 
+        name="{{ field.name }}" 
+        value="{{ field.value }}" 
+        class="field-radio__input" 
+        {% if field.required == "yes" %} required {% endif %}
+        {% if field.checked == "yes" %} checked {% endif %}
+    />
+    {% if field.label %}
+	<label 
+        for="{{ field.id }}" 
+        class="label-default field-radio__label"
+    >
+		{{ field.label }}
+	</label>
+    {% endif %}
+</div>

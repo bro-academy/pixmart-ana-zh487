@@ -1,0 +1,54 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.contacts-form {
+
+    background-color: $color-bg-base;
+    box-shadow: 0px 4px 40px 0px $color-box-shadow;
+    padding: $space-l-minus;
+    border-radius: $border-radius-xl;
+
+    display: flex;
+    flex-direction: column;
+    gap: $space-m;
+
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: $space-m-minus;
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        gap: $space-xxs-plus;
+    }
+
+    & .field-text__input {
+        width: 100%;
+    }
+
+    &__consents {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: $space-l-minus;
+
+        @include desk {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__consents-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: $space-xxs-plus;
+    }
+
+    & .field-textarea__input {
+        height: $textarea-height;
+    }
+
+}

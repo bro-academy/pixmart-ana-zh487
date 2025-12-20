@@ -1,0 +1,75 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.input-default {
+
+    appearance: none;
+
+    background-color: $color-bg-base;
+    color: $color-text-icon-primary;
+
+    font-weight: $fw-xs;
+    font-size: $fs-text-m;
+    line-height: $lh-text-m;
+
+    padding-block: $space-xs;
+    padding-inline: $space-xs-plus;
+
+    border-radius: $border-radius-m;
+    border-style: solid;
+    border-width: $border-width-xs;
+    border-color: $color-separator-bold;
+
+    outline-width: $outline-width-xs;
+    outline-color: transparent;
+
+    &::placeholder {
+        color: $color-text-icon-tertiary;
+    }
+
+    @include transition((border-color, outline-width, outline-color, color, background-color));
+
+    @include hover {
+        border-color: $color-focus;
+        outline-color: $color-focus;
+    }
+
+    &:focus {
+        border-color: $color-focus;
+        outline-width: $border-width-s;
+        outline-color: $color-focus;
+    }
+
+    &:user-invalid {
+        border-color: $color-status-negative;
+
+        &+&__text {
+            color: $color-status-negative;
+        }
+    }
+
+    &:user-valid {
+        &+&__text {
+            color: $color-status-positive;
+        }
+    }
+
+    &:disabled {
+        background-color: $color-separator;
+    }
+
+    &__text {
+        font-size: $fs-text-s;
+        line-height: $lh-text-xs;
+        font-weight: $fw-xs;
+        color: $color-text-icon-secondary;
+        margin-block-start: $space-xxs;
+    }
+
+}
+
+.input-default--large {
+    padding: $space-m-minus;
+    font-size: $fs-text-l;
+    line-height: $lh-text-l;
+}

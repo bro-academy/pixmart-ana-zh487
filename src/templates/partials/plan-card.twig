@@ -1,0 +1,24 @@
+{% from 'ui/icon.twig' import icon %}
+
+<article class="plan-card{% if item.bestseller == "yes" %} plan-card--bestseller{% endif %}">
+	{% if item.bestseller == "yes" %}
+		<span class="plan-card__label">Best Seller</span>
+	{% endif %}
+	<header class="plan-card__header">
+		<h3 class="plan-card__heading heading-xs">{{ item.name }}</h3>
+		<p class="plan-card__price">
+			<span class="plan-card__price-cost">{{ item.cost }}</span>
+			<span class="plan-card__price-period">/ {{ item.period }}</span>
+		</p>
+	</header>
+	<div class="plan-card__body">
+		<ul class="plan-card__benefits">
+			{% for benefit in item.benefits %}
+				<li class="plan-card__benefits-item">
+				{{ icon ("plan-card__benefits-icon", "check", 24, 24) }}
+				{{ benefit.benefit }}</li>
+			{% endfor %}
+		</ul>
+        <button type="button" class="button button--large {% if item.bestseller == "yes" %}button--accent{% endif %}">{{ item.button_text }}</button>
+	</div>
+</article>

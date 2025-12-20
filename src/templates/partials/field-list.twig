@@ -1,0 +1,19 @@
+{% if field.type == "checkbox" %}
+	{% include '/field-checkbox.twig' %}
+{% elseif field.type == "radio" %}
+	{% include '/field-radio.twig' %}
+{% elseif field.type == "radio-group" %}
+	{% include '/radio-group.twig' %}
+{% elseif field.type == "date" %}
+	{% include '/field-date.twig' %}
+{% elseif field.type == "textarea" %}
+	{% include '/field-textarea.twig' %}
+{% elseif field.type == "text" %}
+	{% include '/field-text.twig' %}
+{% elseif field.type == "email" %}
+	{% include '/field-email.twig' %}
+{% elseif field.type == "tel" %}
+	{% include '/field-tel.twig' %}
+{% elseif field.type == "select" %}
+	{% include '/field-select.twig' %}
+{% endif %}

@@ -1,0 +1,15 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.blogpage-content {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: $space-l-plus;
+
+    @include tab {
+        flex-direction: row;
+    }
+
+}

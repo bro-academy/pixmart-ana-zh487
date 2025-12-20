@@ -1,0 +1,24 @@
+{% set pageClass= "homepage" %}
+
+{% extends 'src/templates/layouts/base.twig' %}
+
+{% block title %}
+<title>{{ index.title }}</title>
+<meta name="description" content="{{ index.description }}">
+{% endblock %}
+
+{% block content %}
+  
+  {% include 'src/templates/partials/hero-section.twig' %}
+
+  {% include 'src/templates/partials/services-section.twig' %}
+
+  {% include 'src/templates/partials/categories-section.twig' %}
+
+  {% include 'src/templates/partials/trending-section.twig' %}
+
+  {% include 'src/templates/partials/pricing-section.twig' %}
+
+  {% include 'src/templates/partials/faq-section.twig' %}
+
+{% endblock %}

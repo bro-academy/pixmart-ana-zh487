@@ -1,0 +1,74 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.category-card {
+    background-color: $color-bg-alternative-secondary;
+    border-radius: $border-radius-xl;
+    padding: $space-m;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: $space-s;
+
+    &__icon {
+        color: $color-accent;
+        flex-shrink: 0;
+        
+        @include transition((color));
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: $space-xs-minus;
+    }
+
+    &__heading {
+        color: $color-text-icon-primary;
+
+        @include transition((color));
+    }
+
+    &__tags {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $space-xxs;
+    }
+
+    &__tag {
+        color: $color-text-icon-tertiary;
+        font-size: $fs-text-l;
+        line-height: $lh-text-l;
+
+        @include transition((color));
+
+        &:not(:last-child)::after {
+            content: '\2022';
+            margin-inline-start: $space-xxs;
+        }
+
+        @include tab {
+            font-size: $fs-text-m;
+        }
+    }
+
+    @include transition ((background-color));
+
+    @include hover {
+        background-color: $color-accent;
+
+        & .category-card__icon {
+            color: $color-bg-base;
+        }
+
+        & .category-card__heading {
+            color: $color-text-icon-primary-invert;
+        }
+
+        & .category-card__tag {
+            color: $color-text-icon-secondary-invert;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<div class="{{ form_class }}__field field-select">
+
+	<label 
+		for="{{ field.id }}"
+		class="label-default
+		{% if not item.label %}mob-hid{% endif %}"
+	>
+		{{ field.label }}
+	</label>
+
+	<select class="field-select__input" name="{{ field.name }}" id="{{ field.id }}">
+		{% for option in field.options %}
+			<option value="{{ option.value }}">{{ option.text }}</option>
+		{% endfor %}
+	</select>
+</div>

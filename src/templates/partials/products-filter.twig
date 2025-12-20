@@ -1,0 +1,34 @@
+{% from 'ui/icon.twig' import icon %}
+
+<aside class="products-filter mob-hid tab-hid desk-vis">
+
+	<div class="products-filter__header desk-hid">
+		<h2 class="products-filter__heading heading-s">{{ products.sidebar.filter.heading }}</h2>
+		<input type="checkbox" id="products-filter-toggler" class="products-filter__toggler button button--icon"/>
+	</div>
+
+	<form id="filter-form" action="/" method="post" class="filter-form">
+
+		<button type="reset" class="button filter-form__button">
+			{{ icon ("button__icon", "close", 24, 24) }}
+			{{ products.sidebar.filter.button_reset.text }}
+		</button>
+
+		{% for item in products.sidebar.filter.fieldsets %}
+			<div class="filter-form__fieldset">
+				<h3 class="filter-form__fieldset-heading heading-s">{{ item.heading }}</h3>
+				<div class="filter-form__fieldset-list">
+					{% for field in item.fields %}
+						{% include '/field-list.twig'  with { form_class:"filter-form" } %}
+					{% endfor %}
+				</div>
+			</div>
+		{% endfor %}
+
+	</form>
+
+	<div class="products-filter__footer desk-hid">
+		<button type="submit" form="filter-form" class="products-filter__footer-button button button--large button--accent">{{ products.sidebar.filter.button_save.text }}</button>
+	</div>
+
+</aside>

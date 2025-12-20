@@ -1,0 +1,30 @@
+{% set pageClass= "contactpage" %}
+
+{% extends 'src/templates/layouts/base.twig' %}
+
+{% block title %}
+<title>{{ contacts.title }}</title>
+<meta name="description" content="{{ contacts.description }}">
+{% endblock %}
+
+{% block content %}
+
+	<div class="content-wrapper content-wrapper--contactpage">
+
+		<div class="contactpage__block">
+			
+            {% include 'src/templates/partials/page-header.twig' with {item:contacts.page_header} %}
+			
+            {% include 'src/templates/partials/contacts-info.twig' %}
+
+		</div>
+
+		<div class="contactpage__block">
+
+            {% include 'src/templates/partials/contacts-form.twig' %}
+
+        </div>
+
+	</div>
+
+{% endblock %}

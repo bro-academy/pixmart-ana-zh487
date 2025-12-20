@@ -1,0 +1,23 @@
+<section class="categories-section">
+	<div class="content-wrapper">
+		<div class="categories-section__content">
+			<div class="categories-section__info">
+				<header class="categories-section__header">
+					<span class="categories-section__subheading subheading">{{ index.categories_section.subheading }}</span>
+					<h2 class="categories-section__heading heading-l">{{ index.categories_section.heading }}</h2>
+				</header>
+				<p class="categories-section__description">{{ index.categories_section.description }}</p>
+			</div>
+			<button type="button" class="categories-section__button button button--large button--accent">{{ index.categories_section.button_text }}</button>
+		</div>
+		<div class="categories-section__cards">
+			<ul class="categories-section__list">
+				{% for item in index.categories_section.list %}
+					<li class="categories-section__item">
+						{% include '/category-card.twig' %}
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>

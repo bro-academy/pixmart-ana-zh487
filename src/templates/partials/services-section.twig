@@ -1,0 +1,10 @@
+<section class="services-section">
+<h2 class="services-section__heading mob-hid">{{ index.services_section.heading }}</h2>
+	<ul class="services-section__list content-wrapper">
+		{% for item in index.services_section.list %}
+			<li class="services-section__item">
+				{% include '/service-card.twig' %}
+			</li>
+		{% endfor %}
+	</ul>
+</section>

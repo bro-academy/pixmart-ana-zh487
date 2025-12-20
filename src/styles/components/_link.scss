@@ -1,0 +1,79 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.link {
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $space-xs-minus;
+
+    font-weight: $fw-m;
+    font-size: $fs-text-s;
+    line-height: $lh-text-xs;
+
+    outline-offset: $space-xxs;
+    outline-width: $outline-width-m;
+    outline-style: solid;
+    outline-color: transparent;
+    border-radius: $border-radius-s;
+
+    color: $color-accent;
+
+    &__icon {
+        fill: currentColor;
+    }
+
+    @include transition((color, outline-color));
+
+    @include hover {
+        color: $color-focus;
+    }
+
+    &:focus {
+        outline-color: $color-focus;
+    }
+
+    &:visited {
+        color: $color-pressed;
+    }
+
+    &:disabled {
+        color: $color-text-icon-disabled;
+    }
+
+}
+
+.link--dashed {
+    border-bottom-width: $border-width-xs;
+    border-bottom-style: dashed;
+    border-bottom-color: $color-accent;
+
+    @include hover {
+        border-bottom-color: $color-focus;
+    }
+
+    &:focus {
+        border-bottom-color: $color-focus;
+    }
+
+    &:visited {
+        border-bottom-color: $color-pressed;
+    }
+
+    &:disabled {
+        border-bottom-color: $color-text-icon-disabled;
+    }
+}
+
+.link--accent {
+    color: $color-text-icon-primary;
+}
+
+.link--large-icon {
+
+    padding-block: $space-xxs;
+    padding-inline: $space-xs-minus;
+
+}

@@ -1,0 +1,13 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.featured-picture {
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius-xl;
+    }
+
+}

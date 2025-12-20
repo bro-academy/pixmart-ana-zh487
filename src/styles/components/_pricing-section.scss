@@ -1,0 +1,41 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.pricing-section {
+
+    & .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: $space-xl;
+
+        @include tab {
+            gap: $space-xxxxl-plus;
+        }
+
+        @include desk {
+            gap: $space-xxxl;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $space-s;
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $space-s;
+
+        @include tab {
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+        }
+    }
+}

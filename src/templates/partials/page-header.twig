@@ -1,0 +1,18 @@
+<section class="page-header{% if item.has_background == "yes" %} page-header--background {% endif %}{% if item.two_column == "yes" %} page-header--two-column {% endif %}">
+	<div class="content-wrapper">
+		{% if item.subheading %}
+			<span class="page-header__subheading subheading{% if item.subheading.is__accent == "yes" %} page-header__subheading--accent {% endif %}">
+					{{ item.subheading.text }}
+			</span>
+		{% endif %}
+		<h1 class="page-header__heading heading-xl{% if item.mob_small == "yes" %} heading-xl--mob-small{% endif %}">
+			{% for part in item.heading %}
+				{% if part.is_highlighted == "yes" %}
+					<span class="highlighted">{{ part.text }}</span>
+				{% else %}
+					{{ part.text }}
+				{% endif %}
+			{% endfor %}
+		</h1>
+	</div>
+</section>

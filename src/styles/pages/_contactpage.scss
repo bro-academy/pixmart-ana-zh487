@@ -1,0 +1,12 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.contactpage {
+    flex-grow: 1;
+
+    background: linear-gradient(to bottom, $color-bg-gradient, $color-bg-base 20%, transparent);
+
+    & .page-header {
+        padding-block-end: $space-s;
+    }
+}

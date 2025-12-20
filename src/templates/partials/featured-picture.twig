@@ -1,0 +1,19 @@
+{% from 'ui/picture.twig' import picture %}
+
+<div class="featured-picture">
+	{{ picture(
+	"featured-picture__img",
+	item.srcMob,
+	item.alt,
+	item.width,
+	item.height,
+	"center",
+	"cover",
+	item.srcTab,
+	item.srcDesk,
+	item.widthTab,
+	item.heightTab,
+	item.widthDesk,
+	item.heightDesk
+    ) }}
+</div>

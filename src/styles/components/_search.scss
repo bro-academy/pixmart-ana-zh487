@@ -1,0 +1,87 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.search {
+
+    display: flex;
+    align-items: center;
+    gap: $space-xs-plus;
+
+    padding: $space-xs-minus;
+
+    border-width: $border-width-xs;
+    border-style: solid;
+    border-color: $color-separator-bold;
+    border-radius: $border-radius-m;
+
+    box-shadow: inset 0 0 0 1px $color-separator-bold;
+
+    outline-style: solid;
+    outline-width: $outline-width-xs;
+    outline-color: transparent;
+
+    &::placeholder {
+        color: $color-text-icon-tertiary;
+    }
+
+    @include transition((border-color, box-shadow, outline-width, outline-color, color, background-color));
+
+    @include hover {
+        border-color: $color-focus;
+        outline-color: $color-focus;
+        box-shadow: inset 0 0 0 $border-width-xs $color-focus;
+    }
+
+    &:focus {
+        border-color: $color-focus;
+        outline-width: $border-width-s;
+        outline-color: $color-focus;
+        box-shadow: inset 0 0 0 $border-width-xs $color-focus;
+    }
+
+    $self: &;
+
+    &:has(&__input:user-invalid) {
+        border-color: $color-status-negative;
+
+        #{$self}__text {
+            color: $color-status-negative;
+        }
+    }
+
+    &:has(&__input:user-valid) {
+        #{$self}__text {
+            color: $color-status-positive;
+        }
+    }
+
+    &:has(&__input:disabled) {
+        background-color: $color-separator;
+    }
+
+    @include tab {
+        border-width: $border-width-xs;
+        padding-block: $space-xs;
+        padding-inline: $space-xs-plus;
+        min-width: $search-input-width;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+    }
+
+    &__button-icon {
+        display: block;
+    }
+
+    &__input {
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        font-size: $fs-text-m;
+        line-height: $lh-text-m;
+        width: 100%;
+    }
+
+}

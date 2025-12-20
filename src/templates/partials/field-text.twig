@@ -1,0 +1,29 @@
+<div class="{{ form_class }}__field field-text">
+	{% if field.label %}
+    <label 
+        for="{{ field.id }}" 
+        class="label-default"
+    >
+		{{ field.label }}
+	</label>
+    {% endif %}
+	<input 
+        type="text" 
+        id="{{ field.id }}" 
+        name="{{ field.name }}" 
+        placeholder="{{ field.placeholder }}" 
+        class="field-text__input input-default {% if field.large == "yes" %} input-default--large {% endif %}" 
+        {% if field.pattern %} pattern="{{ field.pattern }}" {% endif %} 
+        {% if field.required == "yes" %} required {% endif %}
+        {% if field.datalist %} list="{{ field.name }}-datalist" {% endif %}
+    />
+
+    {% if field.datalist %}
+        <datalist id="{{ field.name }}-datalist">
+            {% for data in field.datalist %}
+                <option value="{{ data.text }}"></option>
+            {% endfor %}
+        </datalist>
+    {% endif %}
+
+</div>
